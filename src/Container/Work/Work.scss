@@ -149,3 +149,64 @@
 
     }
 }
+.app__work-Github-Calender{
+    border-radius: 25px;    
+    background-color: #fff;
+    padding: 5rem;
+    margin:auto;
+    transition: all 0.3s ease;
+
+    &:hover{
+        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    }
+
+    @media screen and (min-width:1024px) {
+        width:100%;
+        padding:1rem;
+        margin-top: 3rem;
+    }
+}
+.app__work-calender{
+    margin: auto;
+    width:70%;
+}
+
+.app__work-git-stats1{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 80% ;
+    padding: 1rem;
+    margin: 3rem auto ;
+    transition: all 0.3s ease-in-out;
+    div{
+        width: 70%;
+        margin: auto;
+        img{
+                width: 100%;
+        }
+    }
+    
+    &:hover{
+        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        }
+}
+
+.app__work-git-stats2{
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly  ;
+    margin-right: 1rem;
+    div{
+        width: 40%;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+    &:hover{
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    }
+}

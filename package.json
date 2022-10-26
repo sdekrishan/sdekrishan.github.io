@@ -1,5 +1,5 @@
 {
-  "home":"https://sdekrishan.github.io",
+  "home": "https://sdekrishan.github.io",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,7 @@
     "framer-motion": "^7.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.3.4",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",

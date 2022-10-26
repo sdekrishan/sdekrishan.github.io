@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import { AiFillEye, AiFillGithub} from 'react-icons/ai'
 import {motion } from 'framer-motion';
+import GitHubCalendar from 'react-github-calendar'
+import ReactTooltip from 'react-tooltip'
 import {urlFor, client} from '../../client'
 import {AppWrap, MotionWrap} from '../../Wrapper'
  import "./Work.scss"
@@ -36,6 +38,23 @@ console.log(item)
       setWorks(data)
     setFilterWork(data)
   })},[])
+  //for github calender and stats
+  const selectLastHalfYear = contributions => {
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
+    const shownMonths = 6;
+  
+    return contributions.filter(day => {
+      const date = new Date(day.date);
+      const monthOfDay = date.getMonth();
+  
+      return (
+        date.getFullYear() === currentYear &&
+        monthOfDay > currentMonth - shownMonths &&
+        monthOfDay <= currentMonth
+      );
+    });
+  };
   return (
     <>
     <h2 className='head-text'>My Creative <span>Projects </span>Section</h2>
@@ -95,6 +114,53 @@ console.log(item)
         </div>
       ))}
     </motion.div>
+    <motion.div 
+    whileInView={{scale:[0,1]}}
+    transition={{duration:0.25}}
+    className='app__work-Github-Calender' style={{width:'80%',padding:'2rem',marginTop:"5rem",margin:'auto'}}>
+      <GitHubCalendar username='sdekrishan' blockSize={20} hideColorLegend
+       transformData={selectLastHalfYear} style={{margin:"auto",width:'90%'}}
+       className='app__work-calender'>
+         <ReactTooltip html />
+         </GitHubCalendar>
+    </motion.div>
+
+    <motion.div className='app__work-git-stats1'
+     whileInView={{scale:[0,1]}}
+     transition={{duration:0.25}}
+     >
+    <motion.div   whileHover={{scale:[1,1.1]}}>
+        <a href="https://github.com/sdekrishan">
+          <img
+            align="left"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=sdekrishan"
+          />
+        </a>
+      </motion.div>
+      </motion.div>
+      <motion.div className='app__work-git-stats2'
+     whileInView={{scale:[0,1]}}
+     transition={{duration:0.25}}
+     >
+
+      <motion.div   whileHover={{scale:[1,1.1]}}>
+        <a href="https://github.com/sdekrishan">  
+          <img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdekrishan"  //launguages
+          />
+        </a>
+        </motion.div>
+        <motion.div   whileHover={{scale:[1,1.1]}}>
+        <a href="https://github.com/sdekrishan">
+          <img
+            align="left"
+            src="https://github-readme-stats.vercel.app/api?username=sdekrishan&count_private=true&show_icons=true" //stats
+          />
+        </a>
+      </motion.div>
+      </motion.div>
+      
     </>
   )
   
