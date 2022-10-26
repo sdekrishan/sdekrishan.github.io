@@ -1,0 +1,68 @@
+import React from 'react';
+import './Navbar.scss';
+import {HiMenuAlt4, HiX} from 'react-icons/hi';
+import {motion} from 'framer-motion'
+import { useState } from 'react';
+
+const Navbar = () => {
+    const [toggle, setToggle] = useState(false)
+    // const handleResume =()=>{
+    //     window.location.href = "https://drive.google.com/file/d/1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet/view?usp=sharing"        
+    // }
+    
+  return (
+    <nav className='app__navbar'>
+        <div className='app__navbar-logo'>
+            <p>KRISHAN KUMAR</p>
+        </div>
+        <ul className='app__navbar-links'>
+            {/* {['home','about me','projects','skills','contacts','resume'].map((item)=>(
+                <li className='app__flex p-text' key ={`link-${item}`}>
+                    <div/>
+                <a href = {`#${item}`}>{item}</a>
+                </li>
+            ))} */}
+            <li className='app__flex p-text' key ={`link-home`}>
+                <div/>
+                <a href='#home'>home</a></li>
+            <li className='app__flex p-text' key ={`link-aboutme`}>
+                <div/>
+                <a href='#about me'>about me</a></li>
+            <li className='app__flex p-text' key ={`link-projects`}>
+                <div/>
+                <a href='#projects'>projects</a></li>
+            <li className='app__flex p-text' key ={`link-skills`}>
+                <div/>
+                <a href='#skills'>skills</a></li>
+            <li className='app__flex p-text' key ={`link-contacts`}>
+                <div/>
+                <a href='#contacts'>contacts</a></li>
+            <li className='app__flex p-text' key ={`link-resume`}>
+                <div/>
+                <a href='https://drive.google.com/uc?export=download&id=1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet' download >resume</a></li>
+        </ul>
+
+        <div className='app__navbar-menu'>
+                <HiMenuAlt4 onClick={()=>setToggle(true)}/>
+                {toggle && ( 
+                        <motion.div whileInView={{x:[300,0]}} transition={{duration: 0.85, ease: 'easeOut'}}>
+                            <HiX onClick={()=>setToggle(false)}/>   
+                            <ul >
+                            {['home','about me',,'projects','skills','contacts','resume'].map((item)=>(
+                                <li key={item}>
+                    
+                                <a href = {`#${item}`} onClick={()=>setToggle(false)}>
+                                    {item}
+                                </a>
+                                </li>
+                            ))}
+                            </ul>
+                        </motion.div>
+                    )
+                }
+        </div>
+    </nav>
+  )
+}
+
+export default Navbar
