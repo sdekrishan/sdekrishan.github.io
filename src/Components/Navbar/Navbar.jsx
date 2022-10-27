@@ -48,14 +48,25 @@ const Navbar = () => {
                         <motion.div whileInView={{x:[300,0]}} transition={{duration: 0.85, ease: 'easeOut'}}>
                             <HiX onClick={()=>setToggle(false)}/>   
                             <ul >
-                            {['home','about me',,'projects','skills','contacts','resume'].map((item)=>(
-                                <li key={item}>
-                    
-                                <a href = {`#${item}`} onClick={()=>setToggle(false)}>
-                                    {item}
-                                </a>
-                                </li>
-                            ))}
+                            
+                             <li key ={`link-home`}>
+                
+                <a onClick={()=>setToggle(false)} href='#home'>home</a></li>
+            <li key ={`link-aboutme`}>
+               
+          <a onClick={()=>setToggle(false)} href='#about me'>about me</a></li>
+            <li key ={`link-projects`}>
+                
+                <a onClick={()=>setToggle(false)} href='#projects'>projects</a></li>
+            <li key ={`link-skills`}>
+                
+                <a onClick={()=>setToggle(false)} href='#skills'>skills</a></li>
+            <li key ={`link-contacts`}>
+                
+                <a onClick={()=>setToggle(false)} href='#contacts'>contacts</a></li>
+            <li key ={`link-resume`}>
+                
+                <a onClick={()=>setToggle(false)} href='https://drive.google.com/uc?export=download&id=1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet' download >resume</a></li>
                             </ul>
                         </motion.div>
                     )
