@@ -19,6 +19,11 @@
     p{
         font-size: 1.5rem;
         font-family: nebula;    
+
+        @media screen and (max-width:1024px) {
+            font-family: nebula;
+            
+        }
     }
 }
 
