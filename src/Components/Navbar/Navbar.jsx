@@ -9,6 +9,7 @@ const Navbar = () => {
     // const handleResume =()=>{
     //     window.location.href = "https://drive.google.com/file/d/1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet/view?usp=sharing"        
     // }
+
     
   return (
     <nav className='app__navbar'>
@@ -39,7 +40,7 @@ const Navbar = () => {
                 <a href='#contacts'>contacts</a></li>
             <li className='app__flex p-text' key ={`link-resume`}>
                 <div/>
-                <a href='https://drive.google.com/uc?export=download&id=1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet' download >resume</a></li>
+                <a href='https://drive.google.com/uc?export=download&id=1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet' download onClick={()=>window.open('https://drive.google.com/file/d/1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet/view?usp=sharing')}>resume</a></li>
         </ul>
 
         <div className='app__navbar-menu'>

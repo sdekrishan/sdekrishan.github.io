@@ -8,9 +8,11 @@ const SocilaMedia = () => {
   }
   return (
     <div className='app__social'>
-        <div><BsLinkedin onClick={hn}/></div>
-        <div><BsGithub/></div>
-        <div><BsTwitter/></div>
+        <div>
+          <a href="https://linkedin.com/in/sdekrishan" target={'_blank'} ><BsLinkedin/></a></div>
+
+        <div><a href="https://github.com/sdekrishan" target={"_blank"}><BsGithub/></a></div>
+        <div><a href="https://twitter.com/sdekrishan"target={"_blank"}><BsTwitter/></a></div>
         </div>
   )
 }
