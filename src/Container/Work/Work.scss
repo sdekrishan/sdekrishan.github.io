@@ -177,13 +177,13 @@
     justify-content: center;
     width: 80% ;
     padding: 1rem;
-    margin: 3rem auto ;
+    margin:1rem auto ;
     transition: all 0.3s ease-in-out;
     div{
-        width: 70%;
+        width: 90%;
         margin: auto;
         img{
-                width: 100%;
+            width: 100%;
         }
     }
     
@@ -194,14 +194,16 @@
 
 .app__work-git-stats2{
     display: flex;
-    width: 80%;
+    border: 1px solid black;
+    width: 100%;
     padding: 1rem;
     align-items: center;
     justify-content: space-evenly  ;
     margin-right: 1rem;
     div{
-        width: 40%;
-        margin: auto;
+        height: 60%;
+        margin: auto 1rem;
+        margin-top: 0px;
         img{
             width: 100%;
         }
