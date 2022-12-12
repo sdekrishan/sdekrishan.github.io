@@ -91,7 +91,7 @@ console.log(item)
                <AiFillEye/>
             </motion.div>
           </a>
-          <a href={work.projectLink} target="_blank" rel='norefer'>
+          <a href={work.codeLink} target="_blank" rel='norefer'>
             <motion.div
             whileInView={{scale:[0,1]}}
             whileHover={{scale:[1,0.9]}}
@@ -100,7 +100,9 @@ console.log(item)
                <AiFillGithub/>
             </motion.div>
           </a>
+          
         </motion.div>
+
           </div>
           <div className='app__work-content app__flex'>
             <h4 className='bold-text' >
@@ -109,6 +111,10 @@ console.log(item)
             <p className='p-text' style={{marginTop:10}}>{work.description}</p>
             <div className='app__work-tag app__flex'>
               <p className='p-text'>{work.tags[0]}</p>
+            </div>
+            <div className='work-links'>
+              <a href={work.projectLink}><AiFillEye /></a>
+              <a href={work.codeLink}><AiFillGithub/></a>
             </div>
           </div>
         </div>

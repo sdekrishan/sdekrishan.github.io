@@ -169,6 +169,10 @@
         }
         
     }
+    @media screen and (max-width:728px) {
+    display: none;
+    
+    }
  }
 
  .app__header-img{
@@ -181,7 +185,7 @@
     margin-left: 3rem;
 
     img{
-        width: 100%;;
+        width: 100%;
         margin: auto;
         border-radius: 50%;
         object-fit: contain;
@@ -199,5 +203,20 @@
     }
     @media screen and (max-width:1024px) {
         margin: 2rem 0  ;
+    }
+    @media screen and (max-width:728px) {
+        height: 80%;
+        img{
+            width: 50%;
+        }
+        .overlay_circle{
+        position: absolute;
+        left:0;
+        right:0;
+        margin: auto;
+        z-index: 0;
+        width: 50%;
+        height: 100%;
+    }
     }
  }
