@@ -11,12 +11,11 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
     margin: 4rem 0 2rem;
 
     .app__work-filter-item{
         padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
+        position: relative;
         background-color: #fff;
         color:#000;
         font-weight: 800;
@@ -34,6 +33,15 @@
             border-radius: 0.85rem;   
         }
     }
+    .app__work-filter-item::before{
+        content: '';
+    position: absolute;
+    top: 0; left: 0;
+    border-top: 10px solid black;
+    border-right: 10px solid white;
+    width: 0;
+    }
+
 
     .item-active{
         background-color: var(--secondary-color);
@@ -49,19 +57,22 @@
     align-items: center;
 
     .app__work-item{
-        width: 270px;
+        width: 40%;
+        // height: fit-content;
         flex-direction: column;
         margin: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
-        color:#000; 
+        // background-color: #fff;
+        background-color: #eaebea;
+        color:#eaebea; 
 
         cursor: pointer;
         transition: all 0.3s ease;
 
         &:hover{
-            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+            background-image: linear-gradient(to right, #eaebea,#d8323c);
         }
         @media screen and (min-width:2000px) {
             width: 350px;
@@ -69,7 +80,7 @@
             border-radius: 0.75rem;
         }
         
-        @media screen and (max-width:300px) {
+        @media screen and (max-width:1024px) {
             width: 100%;
             margin: 1rem;
         }
@@ -79,7 +90,7 @@
 
 .app__work-img{
     width: 100%;
-    height: 230px;
+    height: auto;
     position: relative;
 
     img{
@@ -112,7 +123,6 @@
         border-radius: 50%;
         background-color: rgba(0,0,0,0.5);
         color:#fff;
-
         margin: 1rem;
         font-family: var(--font-base);
         font-weight: 800;
@@ -132,6 +142,20 @@
     width:100%;
     position: relative;
     flex-direction: column;
+    
+    .icon__div{
+        margin-top:1rem;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        a:visited,:active{
+            // background-color: #0c0e0c;
+            color:black;
+        }
+    }
+    
 
     h4{
         margin-top: 1rem;
@@ -151,13 +175,16 @@
 }
 .app__work-Github-Calender{
     border-radius: 25px;    
-    background-color: #fff;
+    background-color: #0c0e0c;
     padding: 5rem;
     margin:auto;
+    color:#eaebea;
     transition: all 0.3s ease;
 
     &:hover{
-        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        box-shadow: 0 0 25px rgba(245, 244, 244, 0.8);
+    background-image:linear-gradient(to right,#eaebea,#d8323c)
+
     }
 
     @media screen and (min-width:1024px) {
@@ -177,18 +204,19 @@
     justify-content: center;
     width: 80% ;
     padding: 1rem;
-    margin:1rem auto ;
+    margin: 3rem auto ;
     transition: all 0.3s ease-in-out;
     div{
-        width: 90%;
+        width: 70%;
         margin: auto;
         img{
-            width: 100%;
+                width: 100%;
         }
     }
     
     &:hover{
-        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    background-image:linear-gradient(to right,#eaebea,#d8323c)
         }
 }
 
@@ -208,14 +236,19 @@
         }
     }
     &:hover{
-    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    background-image:linear-gradient(to right,#eaebea,#d8323c)
+
     }
 }
-.work-links{
-    width: 50%;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-   
-
+.work__tag-text{
+    color:#0c0e0c;
+}
+.custom_buttons{
+    width: 30px;
+    height:30px;
+    background-color: rgb(184, 181, 181);
+    border-radius: 50%;
+    color:black;
+    border:1px solid black
 }

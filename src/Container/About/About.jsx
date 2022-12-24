@@ -1,13 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import {motion } from 'framer-motion'
 import './About.scss'
-
+import  {images}  from '../../constants';
 // if you dont want to use cms for data, then just uncomment the abouts array and in img attribute src will be about.imgUrl
 // const abouts = [
-//   {title:'Web Development',description:'Build and maintain websites and web applications, using programming, design tools, and languages such as HTML, CSS, Nodejs and JavaScript to meet both client and end-user needs.',imgUrl:images.about01},
-//   {title:'Backend Development',description:'Work on databases, scripting languages, and website design to create the logic upon which websites and web apps function.',imgUrl:images.about04},
-//   {title:'Frontend Development',description:'With the help of web languages like HTML, CSS, DOM, and Javascript creates websites and web application for users.',imgUrl:images.about03},
-//   {title:'MERN Stack',description:'Web Developer with knowledge of MERN stacks with effective knowledge of web tools such as VS code, Postman, Git and Github.',imgUrl:images.about02},
+//   {title:'Full Stack Web Developer',description:'Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Enhance my skills by making many projects. Always looking for learning opportunities from where I can upgrade my skills and give better output to company. Eager to join my developer team and contribute to projects with my full potential.',imgUrl:images.about01},
 
 // ]
 import { urlFor,client } from '../../client';
@@ -15,31 +12,30 @@ import { AppWrap } from '../../Wrapper';
 import {MotionWrap} from '../../Wrapper'
 
 const About = () => {
-  const [abouts, setAbouts] = useState([])
-  useEffect(()=>{
-    const query = '*[_type == "abouts"]'
-    client.fetch(query)
-    .then((data)=>setAbouts(data))
-  },[])
+  const [abouts, setAbouts] = useState({title:'Full Stack Web Developer',description:'Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Enhance my skills by making many projects. Always looking for learning opportunities from where I can upgrade my skills and give better output to company. Eager to join my developer team and contribute to projects with my full potential.'})
+
   return (
-    <>
-    <h2 className='head-text'>I Know that <span>Great Web</span><br/> means <span>Great Business</span></h2>
+    <div className='about_container' id='about'>
+    <h2 className='head-text'>About<span> Me</span></h2>
     <div className='app__profiles'> 
-    {abouts.map((about,index)=>(
+ 
       <motion.div
       whileInView={{opacity:1}}
       whileHover={{scale:1.1}}
       transition={{duration:0.5,type:'tween'}}
       className="app__profile-item"
-      key={about.title+index}>
-        <img src={urlFor(about.imgUrl)} alt= {about.title} />
-        <h2 className='bold-text' style={{marginTop:20}}>{about.title}</h2>
-        <p className='p-text' style={{marginTop:10}}>{about.description}</p>
-
+      >
+        <div className='app__profile-subitem'>
+        <h2 className='bold-text' style={{marginTop:20}}>{abouts.title}</h2>
+        <img src={images.about01} alt= {abouts.title}/>
+        </div>
+        <div className='app__profile-description'>
+        <p className='p-text' style={{marginTop:10}}>{abouts.description}</p>
+        </div>
       </motion.div>
-    ))}
+   
     </div>
-    </>
+    </div>
   )
 }
 

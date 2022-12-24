@@ -17,7 +17,7 @@ const [skills,setSkills] = useState([])
 
   return (
     <>
-    <h2 className='head-text'>My great <span>Skills</span></h2>
+    <h2 className='head-text'>My <span>Skills</span></h2>
 
     <div className= 'app__skills-container'>
 

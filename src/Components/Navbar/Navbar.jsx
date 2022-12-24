@@ -1,14 +1,12 @@
 import React from 'react';
 import './Navbar.scss';
-import {HiMenu, HiX} from 'react-icons/hi';
+import { HiX} from 'react-icons/hi';
+import {GiHamburgerMenu} from 'react-icons/gi'
 import {motion} from 'framer-motion'
 import { useState } from 'react';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
-    // const handleResume =()=>{
-    //     window.location.href = "https://drive.google.com/file/d/1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet/view?usp=sharing"        
-    // }
 
     
   return (
@@ -17,12 +15,7 @@ const Navbar = () => {
             <p>KRISHAN KUMAR</p>
         </div>
         <ul className='app__navbar-links'>
-            {/* {['home','about me','projects','skills','contacts','resume'].map((item)=>(
-                <li className='app__flex p-text' key ={`link-${item}`}>
-                    <div/>
-                <a href = {`#${item}`}>{item}</a>
-                </li>
-            ))} */}
+    
             <li className='app__flex p-text' key ={`link-home`}>
                 <div/>
                 <a href='#home'>home</a></li>
@@ -44,7 +37,7 @@ const Navbar = () => {
         </ul>
 
         <div className='app__navbar-menu'>
-                <HiMenu onClick={()=>setToggle(true)}/>
+                <GiHamburgerMenu onClick={()=>setToggle(true)}/>
                 {toggle && ( 
                         <motion.div whileInView={{x:[300,0]}} transition={{duration: 0.85, ease: 'easeOut'}}>
                             <HiX onClick={()=>setToggle(false)}/>   

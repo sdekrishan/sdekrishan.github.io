@@ -4,7 +4,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(255,255,255,0.25);
+    // background: rgba(255,255,255,0.25);
+    background: #0e0c0e;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255,255,255, 0.18);
     position:fixed;
@@ -20,7 +21,7 @@
     p{
         font-size: 1.5rem;
         font-family: nebula;    
-
+        color:white;
         @media screen and (max-width:1024px) {
             font-family: nebula;
             
@@ -49,15 +50,19 @@
         }
 
         a{
-            color:var(--gray-color);
+            // color:var(--gray-color);
+            color:#eaebea;
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
+            font-family: nebula;
+            font-size: 1rem;
 
             &:hover{
-                color:var(--secondary-color);
+                // color:var(--secondary-color);
+                color:#d8323c;
             }
         }
 
@@ -103,8 +108,8 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        background:url('../../Assets/bgWhite.png');
-        background-color: var(--white-color);
+        // background:url('../../Assets/bgWhite.png');
+        background-color: #0e0c0e;
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168,168,168,0.15);
@@ -131,15 +136,15 @@
                 margin: 1rem;
 
                 a{
-                    color:var(--gray-color);
+                    color:#eaebea;
                     text-decoration: none;
                     font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: 500;
                     transition: all 0.3s ease-in-out;
-
+                    font-family: nebula;
                     &:hover{
-                        color:var(--secondary-color);
+                        color:#d8323c   ;
                     }
                 }
                 }

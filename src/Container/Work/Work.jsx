@@ -17,7 +17,7 @@ const Work = () => {
   const handleWorkFilter=(item)=>{
     setActiveFilter(item);
     setAnimateCard([{y:100,opacity:0}])
-console.log(item)
+
     setTimeout(()=>{
       setAnimateCard([{y:0,opacity:1}])
       if(item === 'All'){
@@ -57,9 +57,9 @@ console.log(item)
   };
   return (
     <>
-    <h2 className='head-text'>My Creative <span>Projects </span>Section</h2>
+    <h2 className='head-text'>Projects <span>Section</span></h2>
     <div className='app__work-filter'>
-      {['Web App','React Js', 'Fun App','All'].map((item,index)=>(
+      {['All', 'Fun App','Web App','React Js'].map((item,index)=>(
         <div 
         key = {index}
         onClick={()=>handleWorkFilter(item)}
@@ -100,31 +100,38 @@ console.log(item)
                <AiFillGithub/>
             </motion.div>
           </a>
-          
         </motion.div>
-
           </div>
           <div className='app__work-content app__flex'>
             <h4 className='bold-text' >
                {work.title}
             </h4>
-            <p className='p-text' style={{marginTop:10}}>{work.description}</p>
-            <div className='app__work-tag app__flex'>
-              <p className='p-text'>{work.tags[0]}</p>
+            <p className='work__tag-text' style={{marginTop:10}}>{work.description}</p>
+            <div className='icon__div'>
+              <a href={work.projectLink} target="_blank">
+              <div>
+              <AiFillEye size={'1.5rem'} className='custom_buttons'/>
+              </div>
+              </a>
+              <a href={work.codeLink} target="_blank">
+              <div>
+              <AiFillGithub size={'1.5rem'} className='custom_buttons'/>
+              </div>
+              </a>
             </div>
-            <div className='work-links'>
-              <a href={work.projectLink}><AiFillEye /></a>
-              <a href={work.codeLink}><AiFillGithub/></a>
+            <div className='app__work-tag app__flex'>
+              <p className='work__tag-text'>{work.tags[0]}</p>
             </div>
           </div>
         </div>
       ))}
+      
     </motion.div>
     <motion.div 
     whileInView={{scale:[0,1]}}
     transition={{duration:0.25}}
     className='app__work-Github-Calender' style={{width:'80%',padding:'2rem',marginTop:"5rem",margin:'auto'}}>
-      <GitHubCalendar username='sdekrishan' blockSize={20} hideColorLegend
+      <GitHubCalendar username='sdekrishan' color={'red'}  blockSize={20} hideColorLegend
        transformData={selectLastHalfYear} style={{margin:"auto",width:'90%'}}
        className='app__work-calender'>
          <ReactTooltip html />
@@ -139,7 +146,7 @@ console.log(item)
         <a href="https://github.com/sdekrishan">
           <img
             align="left"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=sdekrishan"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=sdekrishan&theme=monokai"
           />
         </a>
       </motion.div>
@@ -153,7 +160,7 @@ console.log(item)
         <a href="https://github.com/sdekrishan">  
           <img
             align="center"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdekrishan"  //launguages
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdekrishan&theme=monokai"  //launguages
           />
         </a>
         </motion.div>
@@ -161,7 +168,7 @@ console.log(item)
         <a href="https://github.com/sdekrishan">
           <img
             align="left"
-            src="https://github-readme-stats.vercel.app/api?username=sdekrishan&count_private=true&show_icons=true" //stats
+            src="https://github-readme-stats.vercel.app/api?username=sdekrishan&count_private=true&show_icons=true&theme=monokai" //stats
           />
         </a>
       </motion.div>

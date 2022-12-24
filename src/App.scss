@@ -4,17 +4,18 @@
   }
 
   .app__whitebg {
-    background-color: var(--white-color);
+    // background-color: var(--white-color);
+    background-color: #0c0e0c;
   }
   
   .app__primarybg {
-    background-color: var(--primary-color);
+    background-color: #0c0e0c;
+    // background-color: var(--primary-color);
   }
   
   .app__container {
     width: 100%;
     min-height: 100vh;
-  
     display: flex;
     flex-direction: row;
   }
@@ -55,11 +56,13 @@
     font-size: 2.75rem;
     font-weight: 800;
     text-align: center;
-    color: var(--black-color);
+    // color: var(--black-color);
+    color:#eaebea;
     text-transform: capitalize;
   
     span {
       color: var(--secondary-color);
+      color:#d8323c;
     }
   
     @media screen and (min-width: 2000px) {
@@ -74,7 +77,8 @@
   .p-text {
     font-size: 0.8rem;
     text-align: left;
-    color: var(--gray-color);
+    // color: var(--gray-color);
+    color:#eaebea;
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
@@ -85,7 +89,8 @@
   .bold-text {
     font-size: 1rem;
     font-weight: 800;
-    color: var(--black-color);
+    // color: var(--black-color);
+    color:#eaebea;
     text-align: left;
   
     @media screen and (min-width: 2000px) {
@@ -108,7 +113,8 @@
     div {
       width: 40px;
       height: 40px;
-      border-radius: 50%;
+      // border-radius: 50%;
+      clip-path: polygon(21% 0, 85% 0, 100% 0, 100% 83%, 83% 100%, 30% 100%, 0 100%, 0 17%);
       background-color: var(--white-color);
       margin: 0.25rem 0;
       border: 1px solid var(--lightGray-color);
@@ -159,14 +165,15 @@
     .app__navigation-dot {
       width: 10px;
       height: 10px;
-      border-radius: 50%;
+      // border-radius: 50%;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
       background-color: #cbcbcb;
       margin: 0.5rem;
   
       transition: background-color 0.2s ease-in-out;
   
       &:hover {
-        background-color: var(--secondary-color);
+        background-color: #d8323c;
       }
   
       @media screen and (min-width: 2000px) {

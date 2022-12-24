@@ -1,10 +1,11 @@
 #home{
     position: relative;
-    background:url('../../Assets/bgIMG.png');
-    background-size: cover;
-    background-repeat: repeat;
+    // background:url('../../Assets/bgIMG.png');
+    // background-size: cover;
+    // background-repeat: repeat;
     background-position: center;
-
+    background-color: #0c0e0c;
+    
     .app__wrapper{
         padding:0;
     }
@@ -16,7 +17,7 @@
     height: 100%;
     flex-direction: row;
     padding: 6rem 2rem 0;
-    
+
     @media screen and (min-width:2000px) {
         padding-top: 8rem;
 
@@ -33,12 +34,21 @@
     flex:0.65;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     height: 100%;
 
+
     @media screen and (max-width:2000px) {
         width:100%;
+        margin-right: 0rem;;    
+    }
+    @media screen and (max-width:1024px) {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-right: 0rem;;    
     }
 }
@@ -54,12 +64,21 @@
     .badge-cmp, .tag-cmp{
         padding: 1rem 2rem;
         border:var(--white-color);
+
         border-radius: 15px;
         flex-direction: row;
         width: 36vw;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
         border:1px solid black;
+        div{
+            p{
+            color: #eaebea;
+            }
+            h1{
+        color:#d8323c;
 
+            }
+        }
 
         @media screen and (max-width:1024px) {
             width:90%;
@@ -115,7 +134,9 @@
         height: 70px;
         border-radius: 50%;
         background:var(--white-color );
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        border:2px solid yellow;
+        // box-shadow: 0 0 20px rgba(0,0,0,0.1);
 
         img{
             width:50%;
@@ -159,33 +180,31 @@
     }
 
     @media screen and (max-width:1024px) {
-        width:100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
+        // width:100%;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // margin-left: 0;
+        display: none;
 
         div{
             margin:1rem
         }
         
     }
-    @media screen and (max-width:728px) {
-    display: none;
-    
-    }
  }
 
  .app__header-img{
     flex:1;
-    height:100%;
+    width:50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative; 
     margin-left: 3rem;
+    // border:2px solid yellow;
 
     img{
-        width: 100%;
+        width: 100%;;
         margin: auto;
         border-radius: 50%;
         object-fit: contain;
@@ -203,20 +222,5 @@
     }
     @media screen and (max-width:1024px) {
         margin: 2rem 0  ;
-    }
-    @media screen and (max-width:728px) {
-        height: 80%;
-        img{
-            width: 50%;
-        }
-        .overlay_circle{
-        position: absolute;
-        left:0;
-        right:0;
-        margin: auto;
-        z-index: 0;
-        width: 50%;
-        height: 100%;
-    }
     }
  }

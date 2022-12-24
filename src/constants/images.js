@@ -1,5 +1,4 @@
 import about01 from "../Assets/about01.jpg";
-
 import about02 from "../Assets/about02.jpg";
 import about03 from "../Assets/about03.jpg";
 import about04 from "../Assets/about04.png";

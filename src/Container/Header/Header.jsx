@@ -31,17 +31,17 @@ const Header = () => {
 
             </div>
           </div>
-          <div className='tag-cmp app__flex'>
-          <h2 className='p-text'>Full Stack Web Developer</h2>
-          <p className='p-text'>Result-oriented and Enthusiastic Full Stack Web Developer
+          {/* <div className='tag-cmp app__flex'> */}
+          {/* <h2 className='p-text'>Full Stack Web Developer</h2> */}
+          {/* <p className='p-text'>Result-oriented and Enthusiastic Full Stack Web Developer
 proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,
 and Mongo DB. Enhance my skills by making many projects.
 Always looking for learning opportunities from where I can
 upgrade my skills and give better output to company. Eager to
 join my developer team and contribute to projects with my full
-potential.  </p>
+potential.  </p> */}
 
-          </div>
+          {/* </div> */}
         </div>
         </motion.div>
         <motion.div
