@@ -33,7 +33,7 @@ const Navbar = () => {
                 <a href='#contacts'>contacts</a></li>
             <li className='app__flex p-text' key ={`link-resume`}>
                 <div/>
-                <a href='https://drive.google.com/uc?export=download&id=1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet' download onClick={()=>window.open('https://drive.google.com/file/d/1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet/view?usp=sharing')}>resume</a></li>
+                <a href='https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv' download onClick={()=>window.open('https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing')}>resume</a></li>
         </ul>
 
         <div className='app__navbar-menu'>
@@ -60,7 +60,10 @@ const Navbar = () => {
                 <a onClick={()=>setToggle(false)} href='#contacts'>contacts</a></li>
             <li key ={`link-resume`}>
                 
-                <a onClick={()=>setToggle(false)} href='https://drive.google.com/uc?export=download&id=1nGtDsNq2AEbvCKysglW4SX2xQwwYHMet' download >resume</a></li>
+                <a onClick={()=>{
+                    setToggle(false);
+                    window.open('https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing')
+                    }} href='https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv' download >resume</a></li>
                             </ul>
                         </motion.div>
                     )
