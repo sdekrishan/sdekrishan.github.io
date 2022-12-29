@@ -214,7 +214,7 @@
 
     @media screen and (max-width:768px) {
         width:100%;
-        border:1px solid silver;
+        margin:1rem auto;
     }
 }
 .app__work-calender{
@@ -223,12 +223,12 @@
 }
 
 .app__work-git-stats1{
-    margin-top: 5rem;
+    margin-top: 3rem auto;
     display: flex;
     justify-content: center;
     width: 60% ;
     padding: 1rem;
-    margin: 3rem auto ;
+    // margin: 3rem auto ;
     transition: all 0.3s ease-in-out;
     div{
         width: 90%;
@@ -244,7 +244,7 @@
         }
     @media screen and (max-width:768px) {
         width: 100%;
-        margin-top: 1rem;
+        // margin-top: 1rem;
         div{
             width: 100%;
         }
@@ -268,8 +268,6 @@
         align-items: center;
         img{
             width: 90%;
-            border: 1px solid yellow;
-            // text-align: center;
         }
         @media screen and (max-width:768px) {
             width: 100%;
@@ -283,6 +281,10 @@
     }
     div:nth-child(2){
         width: 50%;
+        @media screen and (max-width:768px) {
+            width: 100%;
+            margin: auto;
+        }
     }
     @media screen and (max-width:768px) {
         width:100%;
@@ -290,7 +292,6 @@
         margin-top: 3rem;
         margin: auto;
         flex-direction: column;
-        border:1px solid silver;
     }
 }
 .work__tag-text{
