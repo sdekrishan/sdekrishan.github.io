@@ -22,7 +22,6 @@ const Work = () => {
       setAnimateCard([{y:0,opacity:1}])
       if(item === 'All'){
         setFilterWork(works);
-
       }
       else{
         setFilterWork(works.filter((ele)=>ele.tags.includes(item)))
@@ -37,7 +36,8 @@ const Work = () => {
     .then((data)=>{
       setWorks(data)
     setFilterWork(data)
-  })},[])
+  })},[]);
+  console.log(filterWork)
   //for github calender and stats
   const selectLastHalfYear = contributions => {
     const currentYear = new Date().getFullYear();
@@ -59,7 +59,7 @@ const Work = () => {
     <>
     <h2 className='head-text'>Projects <span>Section</span></h2>
     <div className='app__work-filter'>
-      {['All', 'Fun App','Web App','React Js'].map((item,index)=>(
+      {['All','React Js','Fun App','JavaScript',].map((item,index)=>(
         <div 
         key = {index}
         onClick={()=>handleWorkFilter(item)}
@@ -103,10 +103,16 @@ const Work = () => {
         </motion.div>
           </div>
           <div className='app__work-content app__flex'>
-            <h4 className='bold-text' >
+            <h4 className='work__title-text' >
                {work.title}
             </h4>
             <p className='work__tag-text' style={{marginTop:10}}>{work.description}</p>
+
+            <div className='work__text-stack'>
+              {work.textstack.map(ts=>{
+                return <div className='work__text-stack_single'>{ts}</div>
+              })}
+            </div>
             <div className='icon__div'>
               <a href={work.projectLink} target="_blank">
               <div>
