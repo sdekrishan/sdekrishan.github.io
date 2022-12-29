@@ -2,7 +2,6 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-
 }
 
 .app__work-filter{
@@ -11,8 +10,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 4rem 0 2rem;
-
+    margin: 3rem auto;
     .app__work-filter-item{
         padding: 0.5rem 1rem;
         position: relative;
@@ -52,21 +50,21 @@
 
 .app__work-portfolio{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     .app__work-item{
         width: 40%;
         // height: fit-content;
         flex-direction: column;
-        margin: 2rem;
+        margin-left: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
         // background-color: #fff;
         background-color: #eaebea;
-        color:#eaebea; 
-
+        color:#0c0e0c; 
         cursor: pointer;
         transition: all 0.3s ease;
 
@@ -74,14 +72,14 @@
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
             background-image: linear-gradient(to right, #eaebea,#d8323c);
         }
-        @media screen and (min-width:2000px) {
-            width: 350px;
-            padding: 1.25rem;
-            border-radius: 0.75rem;
-        }
+   
         
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:768px) {
             width: 100%;
+            margin: 1rem;
+        }
+        @media screen and (min-width:769px) and (max-width:2000px){
+            width: 40%;
             margin: 1rem;
         }
         
@@ -92,7 +90,6 @@
     width: 100%;
     height: auto;
     position: relative;
-
     img{
         width:100%;
         border-radius: 0.5rem;
@@ -160,8 +157,8 @@
         padding: 0 .5rem 1rem .5rem;
         .work__text-stack_single{
             border:1px solid black;
-            background-color: #d8323c;
-            color: #0c0e0c;
+            background-color: #0c0e0c;
+            color: #eaebea;
             padding: .25rem .5rem ; 
             border-radius: 10px;
             font-family:'Kalam', cursive ;
@@ -199,41 +196,42 @@
 
     }
 }
+//style={{width:'80%',padding:'2rem',marginTop:"2rem",margin:'auto'}}
 .app__work-Github-Calender{
     border-radius: 25px;    
     background-color: #0c0e0c;
-    padding: 5rem;
-    margin:auto;
+    // width: 100%;
+    padding: 2rem;
+    margin:3rem auto;
     color:#eaebea;
     transition: all 0.3s ease;
-
+    width: 100%;
     &:hover{
         box-shadow: 0 0 25px rgba(245, 244, 244, 0.8);
     background-image:linear-gradient(to right,#eaebea,#d8323c)
 
     }
 
-    @media screen and (min-width:1024px) {
+    @media screen and (max-width:768px) {
         width:100%;
-        padding:1rem;
-        margin-top: 3rem;
+        border:1px solid silver;
     }
 }
 .app__work-calender{
     margin: auto;
-    width:70%;
+    width:100%;
 }
 
 .app__work-git-stats1{
     margin-top: 5rem;
     display: flex;
     justify-content: center;
-    width: 80% ;
+    width: 60% ;
     padding: 1rem;
     margin: 3rem auto ;
     transition: all 0.3s ease-in-out;
     div{
-        width: 70%;
+        width: 90%;
         margin: auto;
         img{
                 width: 100%;
@@ -244,6 +242,13 @@
         box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
     background-image:linear-gradient(to right,#eaebea,#d8323c)
         }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        margin-top: 1rem;
+        div{
+            width: 100%;
+        }
+    }
 }
 
 .app__work-git-stats2{
@@ -251,20 +256,41 @@
     width: 100%;
     padding: 1rem;
     align-items: center;
-    justify-content: space-evenly  ;
+    justify-content: space-evenly;
     margin-right: 1rem;
     div{
-        height: 60%;
+        width: 35%;
         margin: auto 1rem;
         margin-top: 0px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         img{
-            width: 100%;
+            width: 90%;
+            border: 1px solid yellow;
+            // text-align: center;
         }
+        @media screen and (max-width:768px) {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        &:hover{
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+            background-image:linear-gradient(to right,#eaebea,#d8323c)
+        
+            }
     }
-    &:hover{
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
-    background-image:linear-gradient(to right,#eaebea,#d8323c)
-
+    div:nth-child(2){
+        width: 50%;
+    }
+    @media screen and (max-width:768px) {
+        width:100%;
+        padding:1rem;
+        margin-top: 3rem;
+        margin: auto;
+        flex-direction: column;
+        border:1px solid silver;
     }
 }
 .work__tag-text{

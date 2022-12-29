@@ -37,7 +37,6 @@ const Work = () => {
       setWorks(data)
     setFilterWork(data)
   })},[]);
-  console.log(filterWork)
   //for github calender and stats
   const selectLastHalfYear = contributions => {
     const currentYear = new Date().getFullYear();
@@ -109,8 +108,8 @@ const Work = () => {
             <p className='work__tag-text' style={{marginTop:10}}>{work.description}</p>
 
             <div className='work__text-stack'>
-              {work.textstack.map(ts=>{
-                return <div className='work__text-stack_single'>{ts}</div>
+              {work.textstack.map((ts,ind)=>{
+                return <div className='work__text-stack_single' key={ind}>{ts}</div>
               })}
             </div>
             <div className='icon__div'>
@@ -136,9 +135,9 @@ const Work = () => {
     <motion.div 
     whileInView={{scale:[0,1]}}
     transition={{duration:0.25}}
-    className='app__work-Github-Calender' style={{width:'80%',padding:'2rem',marginTop:"5rem",margin:'auto'}}>
+    className='app__work-Github-Calender' style={{width:'80%'}}>
       <GitHubCalendar username='sdekrishan' color={'red'}  blockSize={20} hideColorLegend
-       transformData={selectLastHalfYear} style={{margin:"auto",width:'90%'}}
+       transformData={selectLastHalfYear} style={{margin:"auto",width:'100%'}}
        className='app__work-calender'>
          <ReactTooltip html />
          </GitHubCalendar>
