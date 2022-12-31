@@ -78,4 +78,6 @@ potential.  </p> */}
   )
 }
 
-export default AppWrap(Header,'home')
+export default AppWrap(Header,'home','app__primarybg')
+
+// export default AppWrap(MotionWrap(Work,'app__work'),'projects','app__primarybg')

@@ -1,11 +1,6 @@
 #home{
     position: relative;
-    // background:url('../../Assets/bgIMG.png');
-    // background-size: cover;
-    // background-repeat: repeat;
-    background-position: center;
-    background-color: #0c0e0c;
-    
+
     .app__wrapper{
         padding:0;
     }
@@ -37,7 +32,6 @@
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-
 
     @media screen and (max-width:2000px) {
         width:100%;
@@ -136,6 +130,7 @@
         background:var(--white-color );
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
         border:2px solid yellow;
+
         // box-shadow: 0 0 20px rgba(0,0,0,0.1);
 
         img{
