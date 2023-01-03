@@ -43,16 +43,24 @@
     div{
         width: 90px;
         height: 90px;
-        // border-radius: 50%;
         background-color: #fff;
-        clip-path: polygon(21% 0, 85% 0, 100% 0, 100% 83%, 83% 100%, 30% 100%, 0 100%, 0 17%);
+        border-radius: 25%;
+        // clip-path: polygon(21% 0, 85% 0, 100% 0, 100% 83%, 83% 100%, 30% 100%, 0 100%, 0 17%);
         img{
             width:50%;
             height: 50%;
+            transition: all .5s ease-in-out;
         }
-
+        
         &:hover{
-            box-shadow: 0 0 25px #fef4f5;
+            // box-shadow: 0 0 25px #fef4f5;
+            box-shadow: 2px 0 15px rgba(255, 255, 255, 0.8);
+
+            img{
+                width: 65%;
+                height:65%
+                
+            }
 
         }
         @media screen and (min-width:2000px) {
