@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className='app__navbar-menu'>
                 <GiHamburgerMenu onClick={()=>setToggle(true)}/>
                 {toggle && ( 
-                        <motion.div whileInView={{x:[300,0]}} transition={{duration: 0.85, ease: 'easeOut'}}>
+                        <motion.div whileInView={{x:[200,0]}} transition={{duration: 0.85, ease: 'easeOut'}}>
                             <HiX onClick={()=>setToggle(false)}/>   
                             <ul >
                             
