@@ -4,15 +4,29 @@ import { HiX} from 'react-icons/hi';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {motion} from 'framer-motion'
 import { useState } from 'react';
-
+import { images } from '../../constants';
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
 
     
   return (
     <nav className='app__navbar'>
-        <div className='app__navbar-logo'>
-            <p>KRISHAN KUMAR</p>
+        <div className=' app__navbar-logo '>
+
+            {/* <p>KRISHAN KUMAR</p> */}
+            <span>K</span>
+            <span>R</span>
+            <span>I</span>
+            <span>S</span>
+            <span>H</span>
+            <span>A</span>
+            <span>N</span>
+            <span>_</span>
+            <span>K</span>
+            <span>U</span>
+            <span>M</span>
+            <span>A</span>
+            <span>R</span>
         </div>
         <ul className='app__navbar-links'>
     
