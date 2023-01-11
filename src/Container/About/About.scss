@@ -49,15 +49,16 @@
             }
 
             @media screen and (max-width:768px) {
-                border: 1px solid black;
                 padding:8px 14px;
                 color: #eaebea;
                 background-color: black;
                 border-radius: 12px;
                 font-size: .8rem;
-                margin: auto;
                 font-family: 'Kalam', cursive;
             }
+        }
+        @media screen and (max-width:1024px) {
+            margin-left: 0;
         }
      }
      .app__profile-subitem{
