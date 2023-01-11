@@ -17,7 +17,7 @@ const Header = () => {
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
             <span className='span'>👋</span>
-            <div style = {{marginLeft:20}}>
+            <div style = {{marginLeft:'1.5rem'}}>
               <p className='p-text'>Hello I am </p>
               <h1 className='head-text'>Krishan Kumar</h1>
               <br />
@@ -26,17 +26,7 @@ const Header = () => {
           <div className='typewriter'>
             <Type />
           </div>
-          {/* <div className='tag-cmp app__flex'> */}
-          {/* <h2 className='p-text'>Full Stack Web Developer</h2> */}
-          {/* <p className='p-text'>Result-oriented and Enthusiastic Full Stack Web Developer
-proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,
-and Mongo DB. Enhance my skills by making many projects.
-Always looking for learning opportunities from where I can
-upgrade my skills and give better output to company. Eager to
-join my developer team and contribute to projects with my full
-potential.  </p> */}
-
-          {/* </div> */}
+         
         </div>
         
 

@@ -7,34 +7,29 @@
 
 .app__profiles{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    // @media screen and (min-width:1024px) {
-    //     display: flex;
-    //     flex-direction: column;
-    //     border:1px solid silver
-    // }
+    justify-content: space-between;
 }
 
 .app__profile-item{
     width:100%;
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: center;
-    //  margin:2rem;
-     padding: 1rem;
+     margin:2rem;
+     justify-content: space-between;
+    //  padding: 1rem;
     //  border:1px solid silver;
      .app__profile-description{
         width: 65%;
-        padding: 2rem;
+        // padding: 2rem;
+        margin-left: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        // border: 1px solid silver;
+        justify-content: space-between;
         p{
             font-size: 1.5rem;
-            font-family:'Times New Roman', Times, serif;
+            // font-family:'Times New Roman', Times, serif;
+            font-family: 'Kalam', cursive;
             text-align: justify;
         }
         a{
@@ -68,7 +63,6 @@
         display: flex;
         flex-direction: column;
         width: 35%;
-        // border:1px solid yellow;
          img{
             width:100%;
             height: auto;

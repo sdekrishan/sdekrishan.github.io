@@ -31,9 +31,7 @@ const About = () => {
           className="app__profile-item"
         >
           <div className="app__profile-subitem">
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {abouts.title}
-            </h2>
+            
             <img src={images.about01} alt={abouts.title} />
           </div>
           <div className="app__profile-description">

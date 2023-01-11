@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    padding: 6rem 2rem 0;
+    padding: 6rem 4rem 0 ;
     // padding:4rem;
     // border:2px solid silver;
 
@@ -25,7 +25,8 @@
     }
     @media screen and (max-width:1024px) {
         flex-direction: column-reverse;
-        // padding: 2rem 1rem 0;
+        padding: 2rem 1rem 0;
+        margin-top: 3rem;
     }
   
 }
@@ -78,6 +79,7 @@
         border:var(--white-color);
         height: fit-content;
         border-radius: 15px;
+        display: flex;
         flex-direction: row;
         width: 80%;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
@@ -90,7 +92,9 @@
             h1{
         color:#d8323c;
         font-family: 'Kalam',cursive;
-
+                @media screen and (max-width:1024px) {
+                    font-size: 1.5rem;
+                }
             }
         }
 
