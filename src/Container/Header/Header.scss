@@ -93,7 +93,7 @@
         color:#d8323c;
         font-family: 'Kalam',cursive;
                 @media screen and (max-width:1024px) {
-                    font-size: 1.5rem;
+                    font-size: 1.7rem;
                 }
             }
         }
@@ -127,13 +127,17 @@
 
     .span{
         font-size:2.5rem;
+        padding-bottom: 12px;
         @media screen and (min-width:2000px) {
             font-size: 5rem;
+        }
+        @media screen and (max-width:1024px) {
+            font-size: 1.7rem;
         }
     }
 
     @media screen and (max-width:1024px) {
-        margin-top: 1rem;
+        // margin-top: 1rem;
         justify-content: flex-start;
         align-items: flex-start;
     }
