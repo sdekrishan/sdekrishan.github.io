@@ -23,7 +23,7 @@
 
     }
     @media screen and (max-width:1024px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     @media screen and (max-width:450px) {
         padding:6rem 1rem 2rem;
@@ -170,7 +170,7 @@
     }
     @media screen and (max-width:1024px) {
         width: 60%;
-        margin: auto;
+        margin:1rem auto 2rem auto;
     }
  }
    
