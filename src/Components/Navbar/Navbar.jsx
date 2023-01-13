@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { images } from '../../constants';
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
-    const [nav,setNav] = useState(false)
     
   return (
     <nav className='app__navbar'>
