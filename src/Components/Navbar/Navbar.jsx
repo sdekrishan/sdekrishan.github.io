@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { images } from '../../constants';
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
-
+    const [nav,setNav] = useState(false)
     
   return (
     <nav className='app__navbar'>
@@ -53,8 +53,12 @@ const Navbar = () => {
         <div className='app__navbar-menu'>
                 <GiHamburgerMenu onClick={()=>setToggle(true)}/>
                 {toggle && ( 
-                        <motion.div whileInView={{x:[200,0]}} transition={{duration: 0.85, ease: 'easeOut'}}>
-                            <HiX onClick={()=>setToggle(false)}/>   
+                        <motion.div animate={{x:[200,0]}} transition={{duration:0.9, type:"spring"}} >
+                            <HiX onClick={()=>{
+                          
+                            setToggle(false)
+                        }
+                            } />   
                             <ul >
                             
                              <li key ={`link-home`}>
