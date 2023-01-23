@@ -137,7 +137,7 @@ const Work = () => {
     transition={{duration:0.25}}
     className='app__work-Github-Calender' style={{width:'80%'}}>
       <GitHubCalendar username='sdekrishan' color={'red'}  blockSize={20} hideColorLegend
-       transformData={selectLastHalfYear} style={{margin:"auto",width:'100%'}}
+        style={{margin:"auto",width:'100%'}}
        className='app__work-calender'>
          <ReactTooltip html />
          </GitHubCalendar>
