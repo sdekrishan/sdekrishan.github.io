@@ -147,7 +147,7 @@ const Work = () => {
      whileInView={{scale:[0,1]}}
      transition={{duration:0.25}}
      >
-    <motion.div   whileHover={{scale:[1,1.1]}}>
+    <motion.div whileHover={{scale:[1,1.1]}}>
         <a href="https://github.com/sdekrishan">
           <img
             align="left"
