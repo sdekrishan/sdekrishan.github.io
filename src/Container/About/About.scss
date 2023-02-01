@@ -18,14 +18,13 @@
      margin:2rem;
      justify-content: space-between;
     //  padding: 1rem;
-    //  border:1px solid silver;
      .app__profile-description{
-        width: 65%;
+        width: 60%;
         // padding: 2rem;
         margin-left: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         p{
             font-size: 1.5rem;
             // font-family:'Times New Roman', Times, serif;
