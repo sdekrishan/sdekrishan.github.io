@@ -133,9 +133,10 @@ const Work = () => {
       
     </motion.div>
     <motion.div 
-    whileInView={{scale:[0,1]}}
-    transition={{duration:0.25}}
-    className='app__work-Github-Calender' style={{width:'80%'}}>
+    // whileInView={{scale:[0,1]}}
+    // transition={{duration:0.1}}
+    className='app__work-Github-Calender'
+     style={{width:'80%'}}>
       <GitHubCalendar username='sdekrishan' color={'red'}  blockSize={20} hideColorLegend
         style={{margin:"auto",width:'100%'}}
        className='app__work-calender'>
@@ -144,13 +145,14 @@ const Work = () => {
     </motion.div>
 
     <motion.div className='app__work-git-stats1'
-     whileInView={{scale:[0,1]}}
      transition={{duration:0.25}}
+     whileHover={{scale:[1,1.1]}}
      >
-    <motion.div whileHover={{scale:[1,1.1]}}>
+    <motion.div >
         <a href="https://github.com/sdekrishan">
           <img
             align="left"
+            alt='readme'
             src="https://github-readme-streak-stats.herokuapp.com/?user=sdekrishan&theme=monokai"
           />
         </a>
@@ -161,10 +163,12 @@ const Work = () => {
      transition={{duration:0.25}}
      >
 
-      <motion.div   whileHover={{scale:[1,1.1]}}>
+      <motion.div
+       whileHover={{scale:[1,1.1]}}>
         <a href="https://github.com/sdekrishan">  
           <img
             align="center"
+            alt='readme'
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdekrishan&theme=monokai"  //launguages
           />
         </a>
@@ -172,7 +176,8 @@ const Work = () => {
         <motion.div   whileHover={{scale:[1,1.1]}}>
         <a href="https://github.com/sdekrishan">
           <img
-            align="left"
+alt= 'name'
+align="left"
             src="https://github-readme-stats.vercel.app/api?username=sdekrishan&count_private=true&show_icons=true&theme=monokai" //stats
           />
         </a>
