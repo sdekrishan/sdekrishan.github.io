@@ -22,7 +22,8 @@ import sass from "../Assets/sass.png";
 import typescript from "../Assets/typescript.png";
 import resume from '../Assets/Krishan-Kumar-Resume.pdf'
 import profile2 from "../Assets/profile2.png"
-import car2 from "../Assets/ccc.png"
+import car2 from "../Assets/ccc.png";
+
 export default {
   about01,
   car2,

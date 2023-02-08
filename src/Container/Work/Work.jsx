@@ -37,23 +37,7 @@ const Work = () => {
       setWorks(data)
     setFilterWork(data)
   })},[]);
-  //for github calender and stats
-  // const selectLastHalfYear = contributions => {
-  //   const currentYear = new Date().getFullYear();
-  //   const currentMonth = new Date().getMonth();
-  //   const shownMonths = 6;
-  
-  //   return contributions.filter(day => {
-  //     const date = new Date(day.date);
-  //     const monthOfDay = date.getMonth();
-  
-  //     return (
-  //       date.getFullYear() === currentYear &&
-  //       monthOfDay > currentMonth - shownMonths &&
-  //       monthOfDay <= currentMonth
-  //     );
-  //   });
-  // };
+
   return (
     <>
     <h2 className='head-text'>Projects <span>Section</span></h2>
@@ -133,8 +117,7 @@ const Work = () => {
       
     </motion.div>
     <motion.div 
-    // whileInView={{scale:[0,1]}}
-    // transition={{duration:0.1}}
+
     className='app__work-Github-Calender'
      style={{width:'80%'}}>
       <GitHubCalendar username='sdekrishan' color={'red'}  blockSize={20} hideColorLegend

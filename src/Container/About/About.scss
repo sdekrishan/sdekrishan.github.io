@@ -17,23 +17,19 @@
      align-items: center;
      margin:2rem;
      justify-content: space-between;
-    //  padding: 1rem;
      .app__profile-description{
         width: 60%;
-        // padding: 2rem;
         margin-left: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         p{
             font-size: 1.5rem;
-            // font-family:'Times New Roman', Times, serif;
             font-family: 'Kalam', cursive;
             text-align: justify;
         }
         a{
             text-decoration: none;
-            // border: 1px solid black;
             padding:8px 14px;
             color: #eaebea;
             background-color: black;
@@ -94,7 +90,6 @@
         .app__profile-description{
             width: 100%;
             padding: 1rem;
-            // border: 1px solid  black;
             p{
                 font-size: 1rem;
                 font-family: 'Kalam', cursive;

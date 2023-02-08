@@ -1,4 +1,3 @@
-import {Box} from '@chakra-ui/react'
 import TypeWriter from 'typewriter-effect'
 import "./Type.scss"
 export default function Type(){

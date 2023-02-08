@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    // background: rgba(255,255,255,0.25);
     background: #0e0c0e;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255,255,255, 0.18);
@@ -53,18 +52,13 @@
   }
   
   @keyframes wave-text{
-    00%{
+    0%{
       transform: translateX(0em);
     }
-    // 25%{
-    //   transform: translateY(-0.3em);
-    // }
+    
     50%{
       transform: translateX(0.3em);
     }
-    // 75%{
-    //     transform:scale(0,2);
-    //   }
     100%{
       transform: translateX(0em);
     }
@@ -92,7 +86,6 @@
         }
 
         a{
-            // color:var(--gray-color);
             color:#eaebea;
             text-decoration: none;
             flex-direction: column;
@@ -103,7 +96,6 @@
             font-size: 1rem;
 
             &:hover{
-                // color:var(--secondary-color);
                 color:#d8323c;
             }
         }
@@ -150,7 +142,6 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        // background:url('../../Assets/bgWhite.png');
         background-color: #0e0c0e;
         background-size: cover;
         background-repeat: repeat;

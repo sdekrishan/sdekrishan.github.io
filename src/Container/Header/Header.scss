@@ -16,8 +16,6 @@
     align-items: center;
     justify-content: space-around;
     padding: 6rem 4rem 0 ;
-    // padding:4rem;
-    // border:2px solid silver;
 
     @media screen and (min-width:2000px) {
         padding-top: 8rem;
@@ -26,7 +24,6 @@
     @media screen and (max-width:1024px) {
         flex-direction: column-reverse;
         padding: 3rem 1rem 0;
-        // margin-top: 3rem;
     }
   
 }
@@ -39,7 +36,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 50%;
-    // border:2px solid red;
     @media screen and (max-width:2000px) {
         width:100%;
         margin-right: 0rem;;    
@@ -60,9 +56,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    // border:2px solid green;
-
-    // padding-top: 3rem;
     .typewriter{
         font-size: 2rem;
         color: #eaebea;
@@ -83,7 +76,6 @@
         flex-direction: row;
         width: 80%;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-        // border:1px solid black;
         div{
             p{
             color: #eaebea;
@@ -102,9 +94,6 @@
             width:100%;
             margin:auto;
             padding: 1rem auto;
-        //     p{
-        // text-align: center;
-        //     }
         }
     }
     .badge-cmp{
@@ -160,7 +149,6 @@
     align-items: flex-end;
     position: relative; 
     margin-left: 3rem;
-    // border:2px solid blue;
 
     
 
@@ -179,7 +167,6 @@
     @media screen and (max-width:1024px) {
         width: 60%;
         margin: 5rem auto 0 auto;
-        // border:1px solid red;
     }
  }
    

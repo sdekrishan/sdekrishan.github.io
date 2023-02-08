@@ -2,12 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./About.scss";
 import { images } from "../../constants";
-// if you dont want to use cms for data, then just uncomment the abouts array and in img attribute src will be about.imgUrl
-// const abouts = [
-//   {title:'Full Stack Web Developer',description:'Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Enhance my skills by making many projects. Always looking for learning opportunities from where I can upgrade my skills and give better output to company. Eager to join my developer team and contribute to projects with my full potential.',imgUrl:images.about01},
-
-// ]
-import { urlFor, client } from "../../client";
 import { AppWrap } from "../../Wrapper";
 import { MotionWrap } from "../../Wrapper";
 
