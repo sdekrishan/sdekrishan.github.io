@@ -43,7 +43,7 @@
     }
 
     &:hover{
-        box-shadow: 0 0 15px #fef4f5;
+        box-shadow: 0 0 12px #fef4f5;
     }
 
     @media screen and (max-width:450px) {
@@ -92,7 +92,7 @@
         }
 
         &:hover{
-            box-shadow: 0 0 15px var(--white-color);
+            box-shadow: 0 0 8px var(--white-color);
         }
     }
 

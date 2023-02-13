@@ -13,7 +13,7 @@ const [skills,setSkills] = useState([])
       setSkills(data)
     
   })},[])
-
+console.log(skills);
 
   return (
     <>
