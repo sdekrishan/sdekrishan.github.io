@@ -46,7 +46,7 @@ const Work = () => {
   {
     imgUrl:'https://user-images.githubusercontent.com/107391017/218407255-f0fdf475-88cb-4845-bc4e-0470c3780572.png',
     name:"krsihan",
-    projectLink:"https://stupendous-douhua-79f5e2.netlify.app/",
+    projectLink:"https://startling-starlight-5eea2b.netlify.app/",
     codeLink:"https://github.com/sdekrishan/Weather_Forecast",
     title:"Weather Forecast",
     description:"An app which shows you the weather forecasting of any city you want.",
@@ -63,16 +63,16 @@ const Work = () => {
   //   textstack:['Html 5','CSS 3' , "JavaScript"],
   //   tags:['JavaScript','All']
   // },
-  {
-    imgUrl:'https://user-images.githubusercontent.com/107391017/218411688-d40d6ec2-7c17-4975-8168-fd6d8af9d58f.png',
-    name:"krsihan",
-    projectLink:"https://stupendous-douhua-79f5e2.netlify.app/",
-    codeLink:"https://github.com/sdekrishan/SnakeGame",
-    title:"Snake Game",
-    description:"A traditional Snake game. By playing it you can remember your childhood memories",
-    textstack:['Html 5','CSS 3' , "JavaScript"],
-    tags:['JavaScript','All','Fun App']
-  },
+  // {
+  //   imgUrl:'https://user-images.githubusercontent.com/107391017/218411688-d40d6ec2-7c17-4975-8168-fd6d8af9d58f.png',
+  //   name:"krsihan",
+  //   projectLink:"https://stupendous-douhua-79f5e2.netlify.app/",
+  //   codeLink:"https://github.com/sdekrishan/SnakeGame",
+  //   title:"Snake Game",
+  //   description:"A traditional Snake game. By playing it you can remember your childhood memories",
+  //   textstack:['Html 5','CSS 3' , "JavaScript"],
+  //   tags:['JavaScript','All','Fun App']
+  // },
   ]
   // setFilterWork(works)
   const handleWorkFilter=(item)=>{
