@@ -22,12 +22,15 @@ import sass from "../Assets/sass.png";
 import typescript from "../Assets/typescript.png";
 import resume from '../Assets/Krishan-Kumar-Resume.pdf'
 import profile2 from "../Assets/profile2.png"
-import car2 from "../Assets/ccc.png";
-
+import next from "../Assets/next.png";
+import express from "../Assets/express.png"
+import chakra from "../Assets/chakra.png"
 export default {
   about01,
-  car2,
+  next,
+  express,
   about02,
+  chakra,
   profile2,
   about03,
   about04,

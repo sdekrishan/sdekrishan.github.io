@@ -3,17 +3,73 @@ import {motion } from 'framer-motion';
 import {urlFor, client} from '../../client'
 import {AppWrap, MotionWrap} from '../../Wrapper'
 import "./Skills.scss"
+import { images } from '../../constants';
 const Skills = () => {
-const [skills,setSkills] = useState([])
+// const [skills,setSkills] = useState([])
 
-  useEffect(()=>{
-    const query = '*[_type == "skills"]';
-    client.fetch(query)
-    .then((data)=>{
-      setSkills(data)
+  // useEffect(()=>{
+  //   const query = '*[_type == "skills"]';
+  //   client.fetch(query)
+  //   .then((data)=>{
+  //     setSkills(data)
     
-  })},[])
-console.log(skills);
+  // })},[])
+
+  const skills = [
+    {
+      name:"Html 5",
+      icon:images.html,
+    },
+    {
+      name:"CSS 3",
+      icon:images.css,
+    },
+    {
+      name:"JavaScript",
+      icon:images.javascript,
+    },
+    {
+      name:"TypeScript",
+      icon:images.typescript,
+    },
+    {
+      name:"React Js",
+      icon:images.react,
+    },
+    {
+      name:"Redux",
+      icon:images.redux,
+    },
+    {
+      name:"Node Js",
+      icon:images.node,
+    },
+    {
+      name:"Express",
+      icon:images.express,
+    },
+    {
+      name:"Sass",
+      icon:images.sass,
+    },
+    {
+      name:"Mongo DB",
+      icon:images.mongodb,
+    },
+    {
+      name:"Github",
+      icon:images.github,
+    },
+    {
+      name:"Chakra UI",
+      icon:images.chakra,
+    },
+    {
+      name:"Next Js",
+      icon:images.next,
+    }
+  ]
+
 
   return (
     <>
@@ -29,8 +85,8 @@ console.log(skills);
           transition={{duration:0.5}}
           className="app__skills-item app__flex"
           key={skill.name}>
-            <div className='app__flex' style={{backgroundColor:skill.bgColor }}>
-              <img src={urlFor(skill.icon)} alt={skill.name}/>
+            <div className='app__flex' >
+              <motion.img whileHover={{scale:[1,1.2]}} src={skill.icon} alt={skill.name}/>
             </div>
             <p className='p-text'>{skill.name}</p>
           </motion.div>
