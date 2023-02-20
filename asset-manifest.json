@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.219cc448.css",
-    "main.js": "/static/js/main.511a0ed7.js",
+    "main.css": "/static/css/main.dc5c7c7d.css",
+    "main.js": "/static/js/main.baf1cbe1.js",
     "static/media/about01.jpg": "/static/media/about01.0a4893421f4eb80a395c.jpg",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/profile.png": "/static/media/profile.82e4d7274bcd8fdb1eef.png",
@@ -10,25 +10,26 @@
     "static/media/profile2.png": "/static/media/profile2.f52e9722f66c3435e524.png",
     "static/media/about03.jpg": "/static/media/about03.10415744af63cfffdcf2.jpg",
     "static/media/Krishan-Kumar-Resume.pdf": "/static/media/Krishan-Kumar-Resume.b10daf50ce5eb6dc1305.pdf",
-    "static/media/ccc.png": "/static/media/ccc.0d017721521bd6fa2053.png",
     "static/media/logo.png": "/static/media/logo.c3155bc0c6a1c18236b6.png",
     "static/media/about02.jpg": "/static/media/about02.e2d2d48245ed44bdf2bc.jpg",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/mongodb.png": "/static/media/mongodb.c5537dea5c62c3b7030d.png",
     "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
     "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
+    "static/media/express.png": "/static/media/express.70ef50a246c3bfa93f0b.png",
     "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
     "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
+    "static/media/next.png": "/static/media/next.9f8054a6dc0837262000.png",
     "static/media/github.png": "/static/media/github.c8007a9fb185cb152ee6.png",
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.219cc448.css.map": "/static/css/main.219cc448.css.map",
-    "main.511a0ed7.js.map": "/static/js/main.511a0ed7.js.map"
+    "main.dc5c7c7d.css.map": "/static/css/main.dc5c7c7d.css.map",
+    "main.baf1cbe1.js.map": "/static/js/main.baf1cbe1.js.map"
   },
   "entrypoints": [
-    "static/css/main.219cc448.css",
-    "static/js/main.511a0ed7.js"
+    "static/css/main.dc5c7c7d.css",
+    "static/js/main.baf1cbe1.js"
   ]
 }
