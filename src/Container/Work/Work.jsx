@@ -10,7 +10,6 @@ import {AppWrap, MotionWrap} from '../../Wrapper'
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All')
   const [animateCard, setAnimateCard] = useState({y:0,opacity:1})
-  // const [works, setWorks] = useState([]);
   const [filterWork,setFilterWork] = useState([])
 
   const works = [{
@@ -64,7 +63,6 @@ const Work = () => {
   //   tags:['JavaScript','All','Fun App']
   // },
   ]
-  // setFilterWork(works)
   const handleWorkFilter=(item)=>{
     setActiveFilter(item);
     setAnimateCard([{y:100,opacity:0}])
@@ -112,7 +110,7 @@ const Work = () => {
         whileHover={{opacity:[0,1]}}
         transition={{duration:0.25,ease:'easeInOut',staggerChildren:0.5}}
         className="app__work-hover app__flex">
-          <a href={work.projectLink} target="_blank" rel='norefer'>
+          <a href={work.projectLink} target="_blank" rel='noreferrer'>
             <motion.div
             whileInView={{scale:[0,1]}}
             whileHover={{scale:[1,0.9]}}
@@ -121,7 +119,7 @@ const Work = () => {
                <AiFillEye/>
             </motion.div>
           </a>
-          <a href={work.codeLink} target="_blank" rel='norefer'>
+          <a href={work.codeLink} target="_blank" rel='noreferrer'>
             <motion.div
             whileInView={{scale:[0,1]}}
             whileHover={{scale:[1,0.9]}}
@@ -144,14 +142,14 @@ const Work = () => {
               })}
             </div>
             <div className='icon__div'>
-              <a href={work.projectLink} target="_blank">
+              <a href={work.projectLink} target="_blank" rel='noreferrer'>
               <div>
-              <AiFillEye size={'1.5rem'} className='custom_buttons'/>
+              <AiFillEye  className='custom_buttons'/>
               </div>
               </a>
-              <a href={work.codeLink} target="_blank">
+              <a href={work.codeLink} target="_blank"  rel='noreferrer'>
               <div>
-              <AiFillGithub size={'1.5rem'} className='custom_buttons'/>
+              <AiFillGithub className='custom_buttons'/>
               </div>
               </a>
             </div>

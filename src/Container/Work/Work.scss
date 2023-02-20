@@ -51,22 +51,19 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-
     .app__work-item{
         width: 40%;
-        // height: fit-content;
         flex-direction: column;
         margin-left: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        // background-color: #fff;
         background-color: #eaebea;
         color:#0c0e0c; 
         cursor: pointer;
-        transition: all 0.4s ease;
-
+        transition: all 0.9s ease-in;
+        
         &:hover{
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
             background-image: linear-gradient(135deg,#d8323c, #eaebea,#d8323c);
@@ -78,7 +75,7 @@
             margin: 1rem;
         }
         @media screen and (min-width:769px) and (max-width:2000px){
-            width: 40%;
+            width: 45%;
             margin: 1rem;
         }
         
@@ -161,16 +158,29 @@
             margin-top: 1.5rem;
         }
     }
+    .custom_buttons{
+        width: 50%;
+        height: 50%;
+        color:white;
+    }
+    
     
     .icon__div{
         margin-top:1rem;
         display: flex;
         width: 50%;
-        justify-content: center;
         align-items: center;
         justify-content: space-between;
+        div{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
         a:visited,:active{
-            // background-color: #0c0e0c;
             color:black;
         }
     }
@@ -305,12 +315,5 @@
 .work__tag-text{
     color:#0c0e0c;
 }
-.custom_buttons{
-    width: 30px;
-    height:30px;
-    background-color: rgb(184, 181, 181);
-    border-radius: 50%;
-    color:black;
-    border:1px solid black
-}
+
 
