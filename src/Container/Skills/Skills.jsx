@@ -1,19 +1,10 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import {motion } from 'framer-motion';
-import {urlFor, client} from '../../client'
 import {AppWrap, MotionWrap} from '../../Wrapper'
 import "./Skills.scss"
 import { images } from '../../constants';
 const Skills = () => {
-// const [skills,setSkills] = useState([])
 
-  // useEffect(()=>{
-  //   const query = '*[_type == "skills"]';
-  //   client.fetch(query)
-  //   .then((data)=>{
-  //     setSkills(data)
-    
-  // })},[])
 
   const skills = [
     {
