@@ -162,7 +162,7 @@
     border-radius: 42% 56% 72% 28% /42% 42% 56% 48%; 
     border-radius: 50%;
     animation: motion 3.75s linear infinite;
-
+    animation-delay: 1s;
     }
     @media screen and (max-width:1024px) {
         width: 60%;

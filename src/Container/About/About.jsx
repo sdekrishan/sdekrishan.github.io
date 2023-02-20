@@ -39,6 +39,7 @@ const About = () => {
               }}
               href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
               download
+              className="button-5"
             >
               Resume
             </a>

@@ -164,18 +164,16 @@ const Work = () => {
     <motion.div 
 
     className='app__work-Github-Calender'
-     style={{width:'80%'}}>
+    >
       <GitHubCalendar username='sdekrishan' color={'red'}  blockSize={20} hideColorLegend
-        style={{margin:"auto",width:'100%'}}
+        // style={{margin:"auto",width:'100%'}}
        className='app__work-calender'>
          <ReactTooltip html />
          </GitHubCalendar>
     </motion.div>
 
     <motion.div className='app__work-git-stats1'
-     transition={{duration:0.1}}
-     whileHover={{scale:[1,1.05]}}
-     >
+     transition={{duration:0.1}}>
     <motion.div >
         <a href="https://github.com/sdekrishan">
           <img
@@ -186,13 +184,9 @@ const Work = () => {
         </a>
       </motion.div>
       </motion.div>
-      <motion.div className='app__work-git-stats2'
-     transition={{duration:0.1}}
-     whileInView={{scale:[0,1.1]}}
-     >
+      <div className='app__work-git-stats2'>
 
-      <motion.div
-       whileHover={{scale:[1,1.05]}}>
+      <div >
         <a href="https://github.com/sdekrishan">  
           <img
             align="center"
@@ -200,8 +194,8 @@ const Work = () => {
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdekrishan&theme=monokai"  //launguages
           />
         </a>
-        </motion.div>
-        <motion.div   whileHover={{scale:[1,1.05]}}>
+        </div>
+        <div>
         <a href="https://github.com/sdekrishan">
           <img
 alt= 'name'
@@ -209,8 +203,8 @@ align="left"
             src="https://github-readme-stats.vercel.app/api?username=sdekrishan&count_private=true&show_icons=true&theme=monokai" //stats
           />
         </a>
-      </motion.div>
-      </motion.div>
+      </div>
+      </div>
       
     </>
   )

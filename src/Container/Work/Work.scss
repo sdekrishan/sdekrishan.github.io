@@ -62,11 +62,20 @@
         background-color: #eaebea;
         color:#0c0e0c; 
         cursor: pointer;
-        transition: all 0.9s ease-in;
-        
+    
+            color: #fff;
+            background-size: 1000px;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            -webkit-transition: background 500ms ease-in;
+            transition: background 500ms ease-in;
+          
+          
         &:hover{
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-            background-image: linear-gradient(135deg,#d8323c, #eaebea,#d8323c);
+            background-image: linear-gradient(135deg, #eaebea,#d8323c,#eaebea,#d8323c,);
+            // background-color: #d8323c;
+            background-position: 100%;
         }
    
         
@@ -75,7 +84,7 @@
             margin: 1rem;
         }
         @media screen and (min-width:769px) and (max-width:2000px){
-            width: 45%;
+            width: 43%;
             margin: 1rem;
         }
         
@@ -209,7 +218,7 @@
     padding: 2rem;
     margin:3rem auto;
     color:#eaebea;
-    width: 100%;
+    width: 80%;
 
     transition: all .8s ease;
     &:hover{
@@ -222,10 +231,7 @@
         margin:1rem auto;
     }
 }
-// .app__work-calender{
-//     margin: auto;
-//         width:100%;
-// }
+
 
 .app__work-git-stats1{
     margin-top: 3rem auto;
@@ -247,7 +253,6 @@
     &:hover{
         box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
         border-radius: 1rem;
-        // background-image: linear-gradient(135deg,#d8323c, #eaebea,#d8323c);
     }
     @media screen and (max-width:768px) {
         width: 100%;
@@ -261,11 +266,11 @@
     display: flex;
     width: 100%;
     padding: 1rem;
-    align-items: center;
-    margin: auto;
+    margin-inline:auto  ;
     justify-content: center;
+    align-items: center;
     justify-content: space-evenly;
-    margin-right: 1rem;
+    
     div{
         width: fit-content;
         margin: auto 1rem;
