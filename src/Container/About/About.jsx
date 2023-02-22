@@ -18,9 +18,7 @@ const About = () => {
         About<span> Me</span>
       </h2>
       <div className="app__profiles">
-        <motion.div
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, type: "tween" }}
+        <div
           className="app__profile-item"
         >
           <div className="app__profile-subitem">
@@ -44,7 +42,7 @@ const About = () => {
               Resume
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

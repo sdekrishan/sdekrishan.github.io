@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import {BsFillPhoneFill} from 'react-icons/bs'
 import {SiGmail} from 'react-icons/si'
 import { BsGithub,BsLinkedin } from 'react-icons/bs'
-import {HiLocationMarker} from 'react-icons/hi'
+import {HiLocationMarker} from 'react-icons/hi';
 import "./Footer.scss"
 const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -30,8 +30,8 @@ const Footer = () => {
   return (
     <>
     <h2 className='head-text'>Lets <span>Connect !</span></h2>
-    <Flex mt='1rem' pl= '0' className='app__footer-cards' flexDirection={{base:"column",sm:"column",md:"row",lg:"row"}} w='90%' boxShadow='5px 10px silver' borderRadius={'10px'}>
-  <Box padding={'1rem'} bgColor='#d7323c' w={{base:"100%",sm:"100%",md:"100%",lg:"45%"}} borderRadius={'.5rem'}>
+    <Flex mt='2rem' pl= '0' pb='1rem'  className='app__footer-cards' flexDirection={{base:"column",sm:"column",md:"row",lg:"row"}} w='90%' boxShadow='5px 10px silver' borderRadius={'10px'}>
+  <Box border={'1px solid silver'} _hover={{boxShadow:"0 0 15px rgba(255, 255, 255, 0.8)" }} transition='.5s ease' padding={'1rem'} w={{base:"100%",sm:"100%",md:"100%",lg:"45%"}} borderRadius={'.5rem'}>
     <Text fontStyle={'italic'} fontSize='xl' color='white' textDecoration='underline' textAlign={'center'}>Contact Details</Text>
 <div className='app__footer-card'>
         <SiGmail color='blue'/>
@@ -67,14 +67,15 @@ const Footer = () => {
       <input type="email" name="user_email" placeholder='Email' />
       <label>Message</label>
       <textarea name="message" rows={'3'} placeholder='Message'/>
-      <input type="submit" value={loading ? 'Sending...' : 'Send Message'} />
+      <input  type="submit" value={loading ? 'Sending...' : 'Send Message'}  />
+      
     </form>
         :<div>
           <Text fontSize={'2xl'} color='white' textAlign={'center'}>Thank you for getting in touch!😍</Text>
         </div> }
     </Box>      
       </Flex>
-   <Text mt='2rem' fontSize={'2xl'} textAlign='left' fontFamily={'kalam'} color='white'>Made By Krishan with 😎</Text>
+   <Text mt='4rem' fontSize={{base:"lg",sm:"lg",md:"xl",lg:"2xl"}} textAlign='left' fontFamily={'kalam'} color='white'>Made By Krishan with 😎</Text>
     </>
   )
 }
