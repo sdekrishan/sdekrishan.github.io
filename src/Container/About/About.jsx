@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import "./About.scss";
 import { images } from "../../constants";
 import { AppWrap } from "../../Wrapper";
 import { MotionWrap } from "../../Wrapper";
 
 const About = () => {
-  const [abouts, setAbouts] = useState({
+  const abouts = {
     title: "Full Stack Web Developer",
     description:
       "Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Enhance my skills by making many projects. Always looking for learning opportunities from where I can upgrade my skills and give better output to company. Eager to join my developer team and contribute to projects with my full potential.",
-  });
+  };
 
   return (
     <div className="about_container" id="about">

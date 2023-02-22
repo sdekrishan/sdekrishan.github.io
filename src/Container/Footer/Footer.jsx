@@ -31,31 +31,31 @@ const Footer = () => {
     <>
     <h2 className='head-text'>Lets <span>Connect !</span></h2>
     <Flex mt='2rem' pl= '0' pb='1rem'  className='app__footer-cards' flexDirection={{base:"column",sm:"column",md:"row",lg:"row"}} w='90%' boxShadow='5px 10px silver' borderRadius={'10px'}>
-  <Box border={'1px solid silver'} _hover={{boxShadow:"0 0 15px rgba(255, 255, 255, 0.8)" }} transition='.5s ease' padding={'1rem'} w={{base:"100%",sm:"100%",md:"100%",lg:"45%"}} borderRadius={'.5rem'}>
+  <Box border={'1px solid silver'} bgColor='black' _hover={{boxShadow:"0 0 15px rgba(255, 255, 255, 0.8)" }} transition='.5s ease' padding={'1rem'} w={{base:"100%",sm:"100%",md:"100%",lg:"45%"}} borderRadius={'.5rem'}>
     <Text fontStyle={'italic'} fontSize='xl' color='white' textDecoration='underline' textAlign={'center'}>Contact Details</Text>
 <div className='app__footer-card'>
         <SiGmail color='blue'/>
-        <Link  ml='0.5rem' href="mailto:sdekrishan@gmail.com" className='work__tag-text'>sdekrishan@gmail.com</Link>
+        <Link target={'_blank'}  ml='0.5rem' href="mailto:sdekrishan@gmail.com" className='work__tag-text'>sdekrishan@gmail.com</Link>
       </div>
       <div className='app__footer-card'>
       <HiLocationMarker color='green' />
 
-        <Link href="https://goo.gl/maps/MqmZXBG7qWtSvNB86"  ml='0.5rem' className='work__tag-text'>Bahadurgarh, Haryana</Link>
+        <Link  target={'_blank'}href="https://goo.gl/maps/MqmZXBG7qWtSvNB86"  ml='0.5rem' className='work__tag-text'>Bahadurgarh, Haryana</Link>
       </div>
       <div className='app__footer-card'>
       <BsFillPhoneFill color='grey' />
 
-        <Link href="tel:7988398651"  ml='0.5rem' className='work__tag-text'>7988398651</Link>
+        <Link  target={'_blank'}href="tel:7988398651"  ml='0.5rem' className='work__tag-text'>7988398651</Link>
       </div>
       <div className='app__footer-card'>
       <BsGithub color='black' />
 
-        <Link href="https://github.com/sdekrishan"  ml='0.5rem' className='work__tag-text'>sdekrishan</Link>
+        <Link target={'_blank'}href="https://github.com/sdekrishan"  ml='0.5rem' className='work__tag-text'>sdekrishan</Link>
       </div>
       <div className='app__footer-card'>
       <BsLinkedin color='blue' />
 
-        <Link href="https://www.linkedin.com/in/sdekrishan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoBhtonT8QoelwDiylVoiWg%3D%3D"  ml='0.5rem' className='work__tag-text'>Krishan Kumar</Link>
+        <Link target={'_blank'}href="https://www.linkedin.com/in/sdekrishan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoBhtonT8QoelwDiylVoiWg%3D%3D"  ml='0.5rem' className='work__tag-text'>Krishan Kumar</Link>
       </div>
     </Box>      
   <Box w={{base:"100%",sm:"100%",md:"100%",lg:"55%"}} padding={'2rem'} >

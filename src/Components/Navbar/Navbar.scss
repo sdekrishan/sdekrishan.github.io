@@ -71,12 +71,11 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-
+    
     li{
         margin: 0 1rem;
         cursor : pointer;   
         flex-direction: column;
-    
         div{
             width:5px;
             height: 5px;

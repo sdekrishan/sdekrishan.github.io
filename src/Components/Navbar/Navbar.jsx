@@ -4,7 +4,6 @@ import { HiX } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { images } from "../../constants";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
