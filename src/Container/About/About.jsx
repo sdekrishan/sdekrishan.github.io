@@ -17,11 +17,8 @@ const About = () => {
         About<span> Me</span>
       </h2>
       <div className="app__profiles">
-        <div
-          className="app__profile-item"
-        >
+        <div className="app__profile-item">
           <div className="app__profile-subitem">
-            
             <img src={images.about01} alt={abouts.title} />
           </div>
           <div className="app__profile-description">
