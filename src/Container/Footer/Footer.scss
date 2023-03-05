@@ -1,7 +1,18 @@
 .app__footer {
-  flex: 1;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  background-color: #0c0e0c;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+ h2{
+  margin-top: 5rem;
+ }
 }
 
 .app__footer-card {

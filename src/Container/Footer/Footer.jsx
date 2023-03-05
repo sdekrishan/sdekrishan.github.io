@@ -36,7 +36,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <div className="app__footer" id='contacts'>
       <h2 className="head-text">
         Lets <span>Connect !</span>
       </h2>
@@ -92,13 +92,14 @@ const Footer = () => {
             </Link>
           </div>
           <div className="app__footer-card">
-            <BsFillPhoneFill color="grey" />
+            <BsFillPhoneFill color="red" />
 
             <Link
               target={"_blank"}
               href="tel:7988398651"
               ml="0.5rem"
               className="work__tag-text"
+              
             >
               7988398651
             </Link>
@@ -157,18 +158,22 @@ const Footer = () => {
       <Text
         mt="4rem"
         fontSize={{ base: "lg", sm: "lg", md: "xl", lg: "2xl" }}
-        textAlign="left"
+        textAlign="center"
+        padding={'1rem'}
         fontFamily={"kalam"}
         color="white"
+        bgColor={'black'}
+        w='full'
       >
         Made By Krishan with 😎
       </Text>
-    </>
+    </div>
   );
 };
 
-export default AppWrap(
-  MotionWrap(Footer, "app__footer"),
-  "contacts",
-  "app__primarybg"
-);
+// export default AppWrap(
+//   MotionWrap(Footer, "app__footer"),
+//   "contacts",
+//   "app__primarybg"
+// );
+export default Footer;
