@@ -61,7 +61,7 @@ const Work = () => {
       imgUrl:
         "https://user-images.githubusercontent.com/107391017/213987948-993489bb-d89b-4024-9ff8-d9656819849a.png",
       name: "krsihan",
-      projectLink: "https://stylelife-sdekrishan.vercel.app/",
+      projectLink: "https://stylelife.vercel.app",
       codeLink: "https://github.com/sdekrishan/Style-Life",
       title: "Style Life",
       description:
