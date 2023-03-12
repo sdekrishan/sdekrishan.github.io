@@ -13,10 +13,12 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }

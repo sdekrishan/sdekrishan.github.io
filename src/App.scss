@@ -1,3 +1,7 @@
+html,body{
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -15,7 +19,7 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 .app__whitebg {
@@ -63,7 +67,6 @@
 .copyright {
   width: 100%;
   padding: 2rem 0 0;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

@@ -4,6 +4,7 @@ import { HiX } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import {Link} from 'react-scroll'
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -28,23 +29,23 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         <li className="app__flex p-text" key={`link-home`}>
           <div />
-          <a href="#home">home</a>
+          <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>home</Link>
         </li>
         <li className="app__flex p-text" key={`link-aboutme`}>
           <div />
-          <a href="#about me">about me</a>
+          <Link to="about me" spy={true} smooth={true} offset={-10} duration={500}>about me</Link>
         </li>
         <li className="app__flex p-text" key={`link-projects`}>
           <div />
-          <a href="#projects">projects</a>
+          <Link to="projects" spy={true} smooth={true} offset={-30} duration={500}>projects</Link>
         </li>
         <li className="app__flex p-text" key={`link-skills`}>
           <div />
-          <a href="#skills">skills</a>
+          <Link to="skills" spy={true} smooth={true} offset={10} duration={500}>skills</Link>
         </li>
         <li className="app__flex p-text" key={`link-contacts`}>
           <div />
-          <a href="#contacts">contacts</a>
+          <Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>contacts</Link>
         </li>
         <li className="app__flex p-text" key={`link-resume`}>
           <div />
@@ -76,29 +77,29 @@ const Navbar = () => {
             />
             <ul>
               <li key={`link-home`}>
-                <a onClick={() => setToggle(false)} href="#home">
+                <Link to="home" spy={true} smooth={true} offset={-50} duration={500}onClick={() => setToggle(false)} >
                   home
-                </a>
+                </Link>
               </li>
               <li key={`link-aboutme`}>
-                <a onClick={() => setToggle(false)} href="#about me">
+                <Link to="about me" spy={true} smooth={true} offset={-10} duration={500}onClick={() => setToggle(false)} >
                   about me
-                </a>
+                </Link>
               </li>
               <li key={`link-projects`}>
-                <a onClick={() => setToggle(false)} href="#projects">
+                <Link to="projects" spy={true} smooth={true} offset={-30} duration={500}onClick={() => setToggle(false)} >
                   projects
-                </a>
+                </Link>
               </li>
               <li key={`link-skills`}>
-                <a onClick={() => setToggle(false)} href="#skills">
+                <Link to="skills" spy={true} smooth={true} offset={10} duration={500}onClick={() => setToggle(false)} >
                   skills
-                </a>
+                </Link>
               </li>
               <li key={`link-contacts`}>
-                <a onClick={() => setToggle(false)} href="#contacts">
+                <Link to="contacts" spy={true} smooth={true} offset={0} duration={500}onClick={() => setToggle(false)} >
                   contacts
-                </a>
+                </Link>
               </li>
               <li key={`link-resume`}>
                 <a
