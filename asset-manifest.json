@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a8535a6.css",
-    "main.js": "/static/js/main.45312412.js",
+    "main.css": "/static/css/main.7fb739c6.css",
+    "main.js": "/static/js/main.1d4a75f1.js",
+    "static/media/jcrew.png": "/static/media/jcrew.e43b4cebd5951bfb2180.png",
     "static/media/about01.jpg": "/static/media/about01.0a4893421f4eb80a395c.jpg",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/profile.png": "/static/media/profile.82e4d7274bcd8fdb1eef.png",
     "static/media/bgIMG.png": "/static/media/bgIMG.c39101e520e2997fc6d4.png",
     "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/prodozen.png": "/static/media/prodozen.3e22db70b77d88baab66.png",
     "static/media/profile2.png": "/static/media/profile2.f52e9722f66c3435e524.png",
     "static/media/about03.jpg": "/static/media/about03.10415744af63cfffdcf2.jpg",
     "static/media/Krishan-Kumar-Resume.pdf": "/static/media/Krishan-Kumar-Resume.b10daf50ce5eb6dc1305.pdf",
@@ -25,11 +27,11 @@
     "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
-    "main.5a8535a6.css.map": "/static/css/main.5a8535a6.css.map",
-    "main.45312412.js.map": "/static/js/main.45312412.js.map"
+    "main.7fb739c6.css.map": "/static/css/main.7fb739c6.css.map",
+    "main.1d4a75f1.js.map": "/static/js/main.1d4a75f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a8535a6.css",
-    "static/js/main.45312412.js"
+    "static/css/main.7fb739c6.css",
+    "static/js/main.1d4a75f1.js"
   ]
 }
