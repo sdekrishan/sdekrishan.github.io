@@ -5,6 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 import { AppWrap, MotionWrap } from "../../Wrapper";
 import "./Work.scss";
+import images from "../../constants/images";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -12,9 +13,11 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
 
   const works = [
+    
+
     {
       imgUrl:
-        "https://camo.githubusercontent.com/84e625826c7d0a53e4b3aa08165c2fb28b74769ba99f48eb379329b26e4d6bd0/68747470733a2f2f692e6962622e636f2f6e3179533242322f686f6d652e706e67",
+        images.jcrew,
       name: "krsihan",
       projectLink: "https://vintageattrie.netlify.app/",
       codeLink: "https://github.com/Raj-1313/The-Vintage-Attire",
@@ -36,26 +39,14 @@ const Work = () => {
       tags: ["React Js", "All"],
     },
     {
-      imgUrl:
-        "https://user-images.githubusercontent.com/101396134/209457493-6152e5ee-0035-4d8a-b53c-99fa72abb470.png",
-      name: "krsihan",
-      projectLink: "https://stayfits.vercel.app/",
-      codeLink: "https://github.com/rajkumar7859/stayFit.com",
-      title: "Stay Fit",
-      description:
-        "StayFit allows users to track calories, monitor progress toward weight-management goals, and gain support from an online community.",
-      textstack: [
-        "Html 5",
-        "CSS 3",
-        "Chakra UI",
-        "React Js",
-        "Redux",
-        "Thunk",
-        "Node Js",
-        "Express.js",
-        "MongoDB",
-      ],
-      tags: ["React Js", "All"],
+      imgUrl:images.prodozen,
+      name:"krsihan",
+      projectLink:"https://prodozen.vercel.app/",
+      codeLink:"https://github.com/sdekrishan/Allinone",
+      title:"ProDozen",
+      description:"All in one is a compilation of more than 13 projects (javascript and reactjs both).",
+      textstack:['Html 5','CSS 3', "JavaScript","React.js","Chart.js","Redux","Chakra UI"],
+      tags:['React Js','All','Fun App']
     },
     {
       imgUrl:
@@ -79,42 +70,31 @@ const Work = () => {
       ],
       tags: ["React Js", "All"],
     },
+ 
     {
       imgUrl:
-        "https://user-images.githubusercontent.com/107391017/218407255-f0fdf475-88cb-4845-bc4e-0470c3780572.png",
+        "https://user-images.githubusercontent.com/101396134/209457493-6152e5ee-0035-4d8a-b53c-99fa72abb470.png",
       name: "krsihan",
-      projectLink: "https://startling-starlight-5eea2b.netlify.app/",
-      codeLink: "https://github.com/sdekrishan/Weather_Forecast",
-      title: "Weather Forecast",
+      projectLink: "https://stayfits.vercel.app/",
+      codeLink: "https://github.com/rajkumar7859/stayFit.com",
+      title: "Stay Fit",
       description:
-        "An app which shows you the weather forecasting of any city you want.",
-      textstack: ["Html 5", "CSS 3", "JavaScript"],
-      tags: ["JavaScript", "All", "Fun App"],
-    },
-    {
-      imgUrl:'https://user-images.githubusercontent.com/107391017/218411688-d40d6ec2-7c17-4975-8168-fd6d8af9d58f.png',
-      name:"krsihan",
-      projectLink:"https://snake-game-lovat-seven.vercel.app/",
-      codeLink:"https://github.com/sdekrishan/SnakeGame",
-      title:"Snake Game",
-      description:"A traditional Snake game. By playing it you can remember your childhood memories",
-      textstack:['Html 5','CSS 3' , "JavaScript"],
-      tags:['JavaScript','All','Fun App']
+        "StayFit allows users to track calories, monitor progress toward weight-management goals, and gain support from an online community.",
+      textstack: [
+        "Html 5",
+        "CSS 3",
+        "Chakra UI",
+        "React Js",
+        "Redux",
+        "Thunk",
+        "Node Js",
+        "Express.js",
+        "MongoDB",
+      ],
+      tags: ["React Js", "All"],
     }
   ];
-  const handleWorkFilter = (item) => {
-    setActiveFilter(item);
-    setAnimateCard([{ y: 100, opacity: 0 }]);
-
-    setTimeout(() => {
-      setAnimateCard([{ y: 0, opacity: 1 }]);
-      if (item === "All") {
-        setFilterWork(works);
-      } else {
-        setFilterWork(works.filter((ele) => ele.tags.includes(item)));
-      }
-    }, 500);
-  };
+ 
 
   useEffect(() => {
     setFilterWork(works);
@@ -125,19 +105,7 @@ const Work = () => {
       <h2 className="head-text">
         Projects <span>Section</span>
       </h2>
-      <div className="app__work-filter">
-        {["All", "React Js", "Fun App", "JavaScript"].map((item, index) => (
-          <div
-            key={index}
-            onClick={() => handleWorkFilter(item)}
-            className={`app__work-filter-item app__flex p-text ${
-              activeFilter === item ? "item-active" : ""
-            }`}
-          >
-            {item}
-          </div>
-        ))}
-      </div>
+      
 
       <motion.div
         animate={animateCard}

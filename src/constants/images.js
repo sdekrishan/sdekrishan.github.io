@@ -25,6 +25,8 @@ import profile2 from "../Assets/profile2.png"
 import next from "../Assets/next.png";
 import express from "../Assets/express.png"
 import chakra from "../Assets/chakra.png"
+import prodozen from '../Assets/prodozen.png'
+import jcrew from '../Assets/jcrew.png'
 export default {
   about01,
   next,
@@ -52,5 +54,7 @@ export default {
   redux,
   sass,
   typescript,
-  resume
+  resume,
+  prodozen,
+  jcrew
 };
