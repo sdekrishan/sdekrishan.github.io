@@ -44,7 +44,7 @@ const Work = () => {
       projectLink:"https://prodozen.vercel.app/",
       codeLink:"https://github.com/sdekrishan/Allinone",
       title:"ProDozen",
-      description:"All in one is a compilation of more than 13 projects (javascript and reactjs both).",
+      description:"ProDozen is a compilation of more than 13 projects (javascript and reactjs both).",
       textstack:['Html 5','CSS 3', "JavaScript","React.js","Chart.js","Redux","Chakra UI"],
       tags:['React Js','All','Fun App']
     },
