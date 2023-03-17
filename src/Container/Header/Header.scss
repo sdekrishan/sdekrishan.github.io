@@ -154,6 +154,7 @@
     object-fit: contain;
     z-index: 1;
     overflow: hidden;
+    border:2px solid black;
     border-radius: 82% 65% 82% 88% /28% 92% 75% 88%;
     border-radius: 50%;
     animation: motion 5s linear infinite;
@@ -166,14 +167,15 @@
 }
 
 @keyframes motion {
-  0%,
-  100% {
-    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
-  }
-  33% {
-    border-radius: 72% 28% 48% 48% /28% 28% 72% 72%;
-  }
-  66% {
-    border-radius: 100% 56% 56% 56% /100% 100% 42% 42%;
-  }
+  0% {
+    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+} 
+
+50% {
+    border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+
+100% {
+  border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+} 
 }
