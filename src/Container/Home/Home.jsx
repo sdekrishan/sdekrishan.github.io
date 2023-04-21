@@ -1,11 +1,11 @@
 import React from "react";
-import "./Header.scss";
+import "./Home.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import AppWrap from "../../Wrapper/AppWrap";
 import Type from "../../Components/Type";
 
-const Header = () => {
+const Home = () => {
   return (
     <div className="app__header app__flex" id="home">
       <motion.div
@@ -34,6 +34,6 @@ const Header = () => {
   );
 };
 
-export default AppWrap(Header, "home", "app__primarybg");
+export default AppWrap(Home, "home", "app__primarybg");
 
 // export default AppWrap(MotionWrap(Work,'app__work'),'projects','app__primarybg')

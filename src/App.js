@@ -2,9 +2,8 @@ import React from "react";
 import {
   About,
   Footer,
-  Header,
+  Home,
   Skills,
-  Testimonials,
   Work,
 } from "./Container/index";
 import { Navbar } from "./Components";
@@ -13,7 +12,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <Header />
+      <Home />
       <About />
       <Work />
       <Skills />
