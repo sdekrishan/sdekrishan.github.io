@@ -3,7 +3,7 @@ import "./About.scss";
 import { images } from "../../constants";
 import { AppWrap } from "../../Wrapper";
 import { MotionWrap } from "../../Wrapper";
-import { Text } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 
 const About = () => {
   const abouts = {
@@ -35,7 +35,7 @@ const About = () => {
             <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
             {abouts.description}
             </p>
-            <Text
+            <Button
               onClick={handleClick}
               // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
               // download
@@ -43,7 +43,7 @@ const About = () => {
               id='resume-button-2'
             >
               Resume
-            </Text>
+            </Button>
           </div>
         </div>
       </div>
