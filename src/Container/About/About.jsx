@@ -4,7 +4,6 @@ import { images } from "../../constants";
 import { AppWrap } from "../../Wrapper";
 import { MotionWrap } from "../../Wrapper";
 import { Text } from "@chakra-ui/react";
-import { Link } from "react-scroll";
 
 const About = () => {
   const abouts = {
@@ -34,14 +33,14 @@ const About = () => {
           </div>
           <div className="app__profile-description">
             <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
-            Result-oriented and Enthusiastic <span>Full Stack Web Developer</span> proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Love to make Interactive UI's. I am a problem-solver and a quick learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly motivated Full Stack Developer with a passion for creating innovative and effective solutions.
+            {abouts.description}
             </p>
             <Text
               onClick={handleClick}
               // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
               // download
               className="button-5"
-              id='resume-link-2'
+              id='resume-button-2'
             >
               Resume
             </Text>
