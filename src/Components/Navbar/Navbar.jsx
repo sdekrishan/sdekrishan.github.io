@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {Link} from 'react-scroll'
+import { Text } from "@chakra-ui/react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -104,7 +105,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li key={`link-resume`}>
-                <Link
+                <Text
                 className="nav-link resume"
                 id="resume-button-1"
                   onClick={() => {
@@ -117,7 +118,7 @@ const Navbar = () => {
                   download
                 >
                   resume
-                </Link>
+                </Text>
               </li>
             </ul>
           </motion.div>
