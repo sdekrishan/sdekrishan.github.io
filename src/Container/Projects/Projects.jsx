@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 import { AppWrap, MotionWrap } from "../../Wrapper";
-import "./Work.scss";
+import "./Projects.scss";
 import images from "../../constants/images";
 
-const Work = () => {
+const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [filterWork, setFilterWork] = useState([]);
@@ -105,25 +105,25 @@ const Work = () => {
       <h2 className="head-text">
         Projects <span>Section</span>
       </h2>
-      
-
+    
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
+        id='projects'
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
+          <div className="app__work-item app__flex project-card" key={index}>
             <div className="app__work-img app__flex">
               <img src={work.imgUrl} alt={work.name} />
             </div>
             <div className="app__work-content app__flex">
-              <h4 className="work__title-text">{work.title}</h4>
-              <p className="work__tag-text" style={{ marginTop: 10 }}>
+              <h4 className="work__title-text project-title">{work.title}</h4>
+              <p className="work__tag-text project-description" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
 
-              <div className="work__text-stack">
+              <div className="work__text-stack project-tech-stack" >
                 {work.textstack.map((ts, ind) => {
                   return (
                     <div className="work__text-stack_single" key={ind}>
@@ -133,12 +133,12 @@ const Work = () => {
                 })}
               </div>
               <div className="icon__div">
-                <a href={work.projectLink} target="_blank" rel="noreferrer">
+                <a href={work.projectLink} target="_blank" rel="noreferrer" className="project-deployed-link">
                   <div>
                     <AiFillEye className="custom_buttons" />
                   </div>
                 </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
+                <a href={work.codeLink} target="_blank" rel="noreferrer" className="project-github-link">
                   <div>
                     <AiFillGithub className="custom_buttons" />
                   </div>
@@ -173,6 +173,7 @@ const Work = () => {
             <img
               align="left"
               alt="readme"
+              id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com/?user=sdekrishan&theme=monokai"
             />
           </a>
@@ -184,6 +185,7 @@ const Work = () => {
             <img
               align="center"
               alt="readme"
+              id="github-top-langs"
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdekrishan&theme=monokai" //launguages
             />
           </a>
@@ -193,6 +195,7 @@ const Work = () => {
             <img
               alt="name"
               align="left"
+              id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=sdekrishan&count_private=true&show_icons=true&theme=monokai" //stats
             />
           </a>
@@ -203,7 +206,7 @@ const Work = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Work, "app__work"),
+  MotionWrap(Projects, "app__work"),
   "projects",
   "app__primarybg"
 );

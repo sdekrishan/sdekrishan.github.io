@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div className="about_container" id="about">
+    <div className="about_container aboutsection" id="about">
       <h2 className="head-text">
         About<span> Me</span>
       </h2>
@@ -22,7 +22,7 @@ const About = () => {
             <img src={images.about01} alt={abouts.title} />
           </div>
           <div className="app__profile-description">
-            <p className="p-text" style={{ marginTop: 10 }}>
+            <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
               {abouts.description}
             </p>
             <a
@@ -34,6 +34,7 @@ const About = () => {
               href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
               download
               className="button-5"
+              id='resume-link-2'
             >
               Resume
             </a>

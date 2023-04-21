@@ -6,7 +6,7 @@ import { BsFillPhoneFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi";
-import "./Footer.scss";
+import "./Contact.scss";
 const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -43,6 +43,7 @@ const Footer = () => {
       <Flex
         mt="2rem"
         pl="0"
+        id="contact"
         pb="1rem"
         className="app__footer-cards"
         flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
@@ -75,6 +76,7 @@ const Footer = () => {
               ml="0.5rem"
               href="mailto:sdekrishan@gmail.com"
               className="work__tag-text"
+              id="contact-email"
             >
               sdekrishan@gmail.com
             </Link>
@@ -99,7 +101,7 @@ const Footer = () => {
               href="tel:7988398651"
               ml="0.5rem"
               className="work__tag-text"
-              
+              id="contact-phone"
             >
               7988398651
             </Link>
@@ -112,6 +114,7 @@ const Footer = () => {
               href="https://github.com/sdekrishan"
               ml="0.5rem"
               className="work__tag-text"
+              id='contact-github'
             >
               sdekrishan
             </Link>
@@ -124,6 +127,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/sdekrishan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoBhtonT8QoelwDiylVoiWg%3D%3D"
               ml="0.5rem"
               className="work__tag-text"
+              id="contact-linkedin"
             >
               Krishan Kumar
             </Link>

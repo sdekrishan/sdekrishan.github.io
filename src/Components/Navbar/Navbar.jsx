@@ -29,29 +29,31 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         <li className="app__flex p-text" key={`link-home`}>
           <div />
-          <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>home</Link>
+          <Link to="home" className="nav-link home" spy={true} smooth={true} offset={-50} duration={500}>home</Link>
         </li>
         <li className="app__flex p-text" key={`link-aboutme`}>
           <div />
-          <Link to="about me" spy={true} smooth={true} offset={-10} duration={500}>about me</Link>
+          <Link className="nav-link about" to="about me" spy={true} smooth={true} offset={-10} duration={500}>about me</Link>
         </li>
         <li className="app__flex p-text" key={`link-projects`}>
           <div />
-          <Link to="projects" spy={true} smooth={true} offset={-30} duration={500}>projects</Link>
+          <Link to="projects" spy={true} className="nav-link projects" smooth={true} offset={-30} duration={500}>projects</Link>
         </li>
         <li className="app__flex p-text" key={`link-skills`}>
           <div />
-          <Link to="skills" spy={true} smooth={true} offset={10} duration={500}>skills</Link>
+          <Link className="nav-link skills" to="skills" spy={true} smooth={true} offset={10} duration={500}>skills</Link>
         </li>
         <li className="app__flex p-text" key={`link-contacts`}>
           <div />
-          <Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>contacts</Link>
+          <Link className="nav-link contact" to="contacts" spy={true} smooth={true} offset={0} duration={500}>contacts</Link>
         </li>
         <li className="app__flex p-text" key={`link-resume`}>
           <div />
           <a
             href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
             download
+            className="nav-link resume"
+            id="resume-link-1"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"

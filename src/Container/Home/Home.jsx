@@ -18,7 +18,7 @@ const Home = () => {
             <span className="span">👋</span>
             <div style={{ marginLeft: "1.5rem" }}>
               <p className="p-text">Hello I am </p>
-              <h1 className="head-text">Krishan Kumar</h1>
+              <h1 className="head-text" id="user-detail-name">Krishan Kumar</h1>
               <br />
             </div>
           </div>
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div className="app__header2-img">
+      <motion.div className="app__header2-img home-img">
         <img src={images.profile2} alt="profile_bg" />
       </motion.div>
     </div>

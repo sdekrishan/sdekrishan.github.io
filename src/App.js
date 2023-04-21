@@ -1,10 +1,10 @@
 import React from "react";
 import {
   About,
-  Footer,
+  Contact,
   Home,
   Skills,
-  Work,
+  Projects,
 } from "./Container/index";
 import { Navbar } from "./Components";
 import "./App.scss";
@@ -14,10 +14,9 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
-      <Work />
+      <Projects />
       <Skills />
-
-      <Footer />
+      <Contact />
     </div>
   );
 };

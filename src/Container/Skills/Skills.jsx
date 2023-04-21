@@ -65,13 +65,13 @@ const Skills = () => {
         My <span>Skills</span>
       </h2>
 
-      <div className="app__skills-container">
+      <div className="app__skills-container" id='skills'>
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
+              className="app__skills-item app__flex skills-card"
               key={skill.name}
             >
               <div className="app__flex">
@@ -79,9 +79,10 @@ const Skills = () => {
                   whileHover={{ scale: [1, 1.2] }}
                   src={skill.icon}
                   alt={skill.name}
+                  className="skills-card-img"
                 />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p className="p-text  skills-card-name">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
