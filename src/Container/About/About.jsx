@@ -3,6 +3,7 @@ import "./About.scss";
 import { images } from "../../constants";
 import { AppWrap } from "../../Wrapper";
 import { MotionWrap } from "../../Wrapper";
+import { Text } from "@chakra-ui/react";
 
 const About = () => {
   const abouts = {
@@ -25,7 +26,7 @@ const About = () => {
             <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
             Result-oriented and Enthusiastic <span>Full Stack Web Developer</span> proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Love to make Interactive UI's. I am a problem-solver and a quick learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly motivated Full Stack Developer with a passion for creating innovative and effective solutions.
             </p>
-            <a
+            <Text
               onClick={() => {
                 window.open(
                   "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
@@ -37,7 +38,7 @@ const About = () => {
               id='resume-button-2'
             >
               Resume
-            </a>
+            </Text>
           </div>
         </div>
       </div>
