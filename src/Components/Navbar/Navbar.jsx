@@ -104,7 +104,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li key={`link-resume`}>
-                <a
+                <Link
                 className="nav-link resume"
                 id="resume-button-1"
                   onClick={() => {
@@ -117,7 +117,7 @@ const Navbar = () => {
                   download
                 >
                   resume
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
