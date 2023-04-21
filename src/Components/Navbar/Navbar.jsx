@@ -79,32 +79,33 @@ const Navbar = () => {
             />
             <ul>
               <li key={`link-home`}>
-                <Link to="home" spy={true} smooth={true} offset={-50} duration={500}onClick={() => setToggle(false)} >
+                <Link to="home" className="nav-link home" spy={true} smooth={true} offset={-50} duration={500}onClick={() => setToggle(false)} >
                   home
                 </Link>
               </li>
               <li key={`link-aboutme`}>
-                <Link to="about me" spy={true} smooth={true} offset={-10} duration={500}onClick={() => setToggle(false)} >
+                <Link to="about me" className="nav-link about" spy={true} smooth={true} offset={-10} duration={500}onClick={() => setToggle(false)} >
                   about me
                 </Link>
               </li>
               <li key={`link-projects`}>
-                <Link to="projects" spy={true} smooth={true} offset={-30} duration={500}onClick={() => setToggle(false)} >
+                <Link to="projects" className="nav-link projects" spy={true} smooth={true} offset={-30} duration={500}onClick={() => setToggle(false)} >
                   projects
                 </Link>
               </li>
               <li key={`link-skills`}>
-                <Link to="skills" spy={true} smooth={true} offset={10} duration={500}onClick={() => setToggle(false)} >
+                <Link to="skills" className="nav-link skills" spy={true} smooth={true} offset={10} duration={500}onClick={() => setToggle(false)} >
                   skills
                 </Link>
               </li>
               <li key={`link-contacts`}>
-                <Link to="contacts" spy={true} smooth={true} offset={0} duration={500}onClick={() => setToggle(false)} >
+                <Link to="contacts" className="nav-link contact" spy={true} smooth={true} offset={0} duration={500}onClick={() => setToggle(false)} >
                   contacts
                 </Link>
               </li>
               <li key={`link-resume`}>
                 <a
+                className="nav-link resume"
                   onClick={() => {
                     setToggle(false);
                     window.open(
