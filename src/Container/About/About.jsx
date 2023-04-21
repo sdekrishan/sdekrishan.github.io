@@ -8,11 +8,11 @@ const About = () => {
   const abouts = {
     title: "Full Stack Web Developer",
     description:
-      "Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Enhance my skills by making many projects. Always looking for learning opportunities from where I can upgrade my skills and give better output to company. Eager to join my developer team and contribute to projects with my full potential.",
+      "Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Love to make Interactive UI's. I am a problem-solver and a quick learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly motivated Full Stack Developer with a passion for creating innovative and effective solutions.",
   };
 
   return (
-    <div className="about_container aboutsection" id="about">
+    <div className="about_container about section" id="about">
       <h2 className="head-text">
         About<span> Me</span>
       </h2>
@@ -23,7 +23,7 @@ const About = () => {
           </div>
           <div className="app__profile-description">
             <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
-              {abouts.description}
+            Result-oriented and Enthusiastic <span>Full Stack Web Developer</span> proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Love to make Interactive UI's. I am a problem-solver and a quick learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly motivated Full Stack Developer with a passion for creating innovative and effective solutions.
             </p>
             <a
               onClick={() => {
@@ -34,7 +34,7 @@ const About = () => {
               href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
               download
               className="button-5"
-              id='resume-link-2'
+              id='resume-button-2'
             >
               Resume
             </a>

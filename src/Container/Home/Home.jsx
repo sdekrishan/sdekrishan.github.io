@@ -27,8 +27,8 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div className="app__header2-img home-img">
-        <img src={images.profile2} alt="profile_bg" />
+      <motion.div className="app__header2-img ">
+        <img src={images.profile2} alt="profile_bg" className="home-img" />
       </motion.div>
     </div>
   );
