@@ -12,7 +12,16 @@ const About = () => {
     description:
       "Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Love to make Interactive UI's. I am a problem-solver and a quick learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly motivated Full Stack Developer with a passion for creating innovative and effective solutions.",
   };
-
+  const handleClick = () =>{
+  window.open("https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing")
+  const url = "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'file.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
   return (
     <div className="about_container about section" id="about">
       <h2 className="head-text">
@@ -27,19 +36,15 @@ const About = () => {
             <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
             Result-oriented and Enthusiastic <span>Full Stack Web Developer</span> proficient in tech Stacks like JavaScript, React Js, Node Js, Redux,and Mongo DB. Love to make Interactive UI's. I am a problem-solver and a quick learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly motivated Full Stack Developer with a passion for creating innovative and effective solutions.
             </p>
-            <Link
-              onClick={() => {
-                window.open(
-                  "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
-                );
-              }}
-              href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
-              download
+            <Text
+              onClick={handleClick}
+              // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
+              // download
               className="button-5"
               id='resume-button-2'
             >
               Resume
-            </Link>
+            </Text>
           </div>
         </div>
       </div>

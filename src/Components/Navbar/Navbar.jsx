@@ -8,6 +8,16 @@ import {Link} from 'react-scroll'
 import { Text } from "@chakra-ui/react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const handleClick = () =>{
+    window.open("https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing")
+    const url = "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'file.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }
 
   return (
     <nav className="app__navbar" id = "nav-menu">
@@ -50,19 +60,15 @@ const Navbar = () => {
         </li>
         <li className="app__flex p-text" key={`link-resume`}>
           <div />
-          <a
-            href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
-            download
+          <Text
+            // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
+            // download
             className="nav-link resume"
             id="resume-button-1"
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
-              )
-            }
+            onClick={handleClick}
           >
             resume
-          </a>
+          </Text>
         </li>
       </ul>
 
@@ -108,14 +114,9 @@ const Navbar = () => {
                 <Text
                 className="nav-link resume"
                 id="resume-button-1"
-                  onClick={() => {
-                    setToggle(false);
-                    window.open(
-                      "https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing"
-                    );
-                  }}
-                  href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
-                  download
+                  onClick={handleClick}
+                  // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
+                  // download
                 >
                   resume
                 </Text>
