@@ -13,6 +13,7 @@ const About = () => {
   };
   const handleClick = () =>{
   window.open("https://drive.google.com/file/d/1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv/view?usp=sharing")
+  window.location.href='https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv'
   // const url = "https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv";
   //   const link = document.createElement('a');
   //   link.href = url;
@@ -37,7 +38,7 @@ const About = () => {
             </p>
             <Button
               onClick={handleClick}
-              href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
+              
               download
               className="button-5"
               id='resume-button-2'
