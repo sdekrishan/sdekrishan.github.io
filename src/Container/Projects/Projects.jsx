@@ -41,7 +41,7 @@ const Projects = () => {
     {
       imgUrl:images.prodozen,
       name:"krsihan",
-      projectLink:"https://prodozen.vercel.app/",
+      projectLink:"https://allinone-azure.vercel.app/",
       codeLink:"https://github.com/sdekrishan/Allinone",
       title:"ProDozen",
       description:"ProDozen is a compilation of more than 13 projects (javascript and reactjs both).",

@@ -29,14 +29,14 @@ const About = () => {
             <p className="p-text" style={{ marginTop: 10 }} id="user-detail-intro">
             {abouts.description}
             </p>
-            <Button
+            <button
               onClick={handleClick}
               download
               className="button-5"
               id='resume-button-2'
             >
               Resume     
-            </Button>
+            </button>
           </div>
         </div>
       </div>
