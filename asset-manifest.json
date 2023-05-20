@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e454fcf3.css",
-    "main.js": "/static/js/main.d8d78328.js",
+    "main.js": "/static/js/main.a2c34b52.js",
     "static/media/jcrew.png": "/static/media/jcrew.e43b4cebd5951bfb2180.png",
     "static/media/about01.jpg": "/static/media/about01.0a4893421f4eb80a395c.jpg",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
@@ -13,6 +13,7 @@
     "static/media/about03.jpg": "/static/media/about03.10415744af63cfffdcf2.jpg",
     "static/media/Krishan-Kumar-Resume.pdf": "/static/media/Krishan-Kumar-Resume.b10daf50ce5eb6dc1305.pdf",
     "static/media/logo.png": "/static/media/logo.c3155bc0c6a1c18236b6.png",
+    "static/media/lestalk.png": "/static/media/lestalk.dea69071fc21a8fc35fe.png",
     "static/media/about02.jpg": "/static/media/about02.e2d2d48245ed44bdf2bc.jpg",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/mongodb.png": "/static/media/mongodb.c5537dea5c62c3b7030d.png",
@@ -28,10 +29,10 @@
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
     "main.e454fcf3.css.map": "/static/css/main.e454fcf3.css.map",
-    "main.d8d78328.js.map": "/static/js/main.d8d78328.js.map"
+    "main.a2c34b52.js.map": "/static/js/main.a2c34b52.js.map"
   },
   "entrypoints": [
     "static/css/main.e454fcf3.css",
-    "static/js/main.d8d78328.js"
+    "static/js/main.a2c34b52.js"
   ]
 }
