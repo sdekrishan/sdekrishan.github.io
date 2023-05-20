@@ -27,7 +27,9 @@ import express from "../Assets/express.png"
 import chakra from "../Assets/chakra.png"
 import prodozen from '../Assets/prodozen.png'
 import jcrew from '../Assets/jcrew.png'
+import lestalk from "../Assets/lestalk.png"
 export default {
+  lestalk,
   about01,
   next,
   express,

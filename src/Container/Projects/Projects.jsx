@@ -13,7 +13,29 @@ const Projects = () => {
   const [filterWork, setFilterWork] = useState([]);
 
   const works = [
-    
+    {
+      imgUrl:
+        images.lestalk,
+      name: "krsihan",
+      projectLink: "https://dontknow-seven.vercel.app/",
+      codeLink: "https://github.com/sdekrishan/dontknow",
+      title: "Lestalk ",
+      description:
+        "Lestalk is a Social media app where user can make friends, share posts and also chat with them. User can manage their friendship also.",
+      textstack: [
+        "Html 5",
+        "Socket.io",
+        "Chakra UI",
+        "React Js",
+        "Redux",
+        "Thunk",
+        "Node Js",
+        "Express.js",
+        "MongoDB",
+        "Sass",
+      ],
+      tags: ["React Js", "All"],
+    },
 
     {
       imgUrl:
