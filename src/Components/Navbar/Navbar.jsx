@@ -112,8 +112,9 @@ const Navbar = () => {
               </li>
               <li key={`link-resume`}>
                 <Text
-                // className="nav-link resume"
+                className="nav-link resume"
                 // id="resume-button-1"
+                
                   onClick={handleClick}
                   // href="https://drive.google.com/uc?export=download&id=1IvwRAj-3hldcDAgkUlGL7KP3FmoBySuv"
                   // download
