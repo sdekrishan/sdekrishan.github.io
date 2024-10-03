@@ -9,6 +9,7 @@ import {
 import { Navbar } from "./Components";
 import "./App.scss";
 const App = () => {
+  //just for checking
   return (
     <div className="app">
       <Navbar />
