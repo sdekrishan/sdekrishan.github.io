@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
-import { AppWrap, MotionWrap } from "../../Wrapper";
 import emailjs from "@emailjs/browser";
 import { BsFillPhoneFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
@@ -49,11 +48,11 @@ const Footer = () => {
         flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
         w="90%"
         boxShadow="5px 10px silver"
+        border="1px solid black"
         borderRadius={"10px"}
       >
         <Box
-          border={"1px solid silver"}
-          bgColor="black"
+          border={"1px solid green"}
           _hover={{ boxShadow: "0 0 15px rgba(255, 255, 255, 0.8)" }}
           transition=".5s ease"
           padding={"1rem"}
@@ -63,7 +62,6 @@ const Footer = () => {
           <Text
             fontStyle={"italic"}
             fontSize="xl"
-            color="white"
             textDecoration="underline"
             textAlign={"center"}
           >
@@ -165,8 +163,6 @@ const Footer = () => {
         textAlign="center"
         padding={'1rem'}
         fontFamily={"kalam"}
-        color="white"
-        bgColor={'black'}
         w='full'
       >
         Made By Krishan with 😎

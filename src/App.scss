@@ -23,21 +23,23 @@ html,body{
 }
 
 .app__whitebg {
-  background-color: #0c0e0c;
-  background: linear-gradient(
-    109.6deg,
-    rgba(0, 0, 0, 0.93) 11.2%,
-    rgb(63, 61, 61) 78.9%
-  );
+  // background-color: #0c0e0c;
+  // background: linear-gradient(
+  //   109.6deg,
+  //   rgba(0, 0, 0, 0.93) 11.2%,
+  //   rgb(63, 61, 61) 78.9%
+  // );
+  background-color: white;
 }
 
 .app__primarybg {
-  background-color: #0c0e0c;
-  background: linear-gradient(
-    109.6deg,
-    rgba(0, 0, 0, 0.93) 11.2%,
-    rgb(63, 61, 61) 78.9%
-  );
+  // background-color: #0c0e0c;
+  // background: linear-gradient(
+  //   109.6deg,
+  //   rgba(0, 0, 0, 0.93) 11.2%,
+  //   rgb(63, 61, 61) 78.9%
+  // );
+  background-color: white;
 }
 
 .app__container {
@@ -83,7 +85,7 @@ html,body{
   font-weight: 800;
   text-align: center;
   // color: var(--black-color);
-  color: #eaebea;
+  color: #000000;
   text-transform: capitalize;
 
   span {
@@ -104,7 +106,7 @@ html,body{
   font-size: 0.8rem;
   text-align: left;
   // color: var(--gray-color);
-  color: #eaebea;
+  color: var(--black-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -152,7 +154,7 @@ html,body{
     );
     background-color: var(--white-color);
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
+    border: 1px solid var(--black-color);
 
     display: flex;
     justify-content: center;
