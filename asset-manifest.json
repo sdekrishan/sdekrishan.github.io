@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecae54d9.css",
-    "main.js": "/static/js/main.d6196dac.js",
+    "main.css": "/static/css/main.64ec27cf.css",
+    "main.js": "/static/js/main.c5b2d18e.js",
     "static/media/jcrew.png": "/static/media/jcrew.e43b4cebd5951bfb2180.png",
     "static/media/about01.jpg": "/static/media/about01.0a4893421f4eb80a395c.jpg",
+    "static/media/avt.png": "/static/media/avt.c101babd4878d8dc1576.png",
+    "static/media/stayFit.png": "/static/media/stayFit.6c3cca61e2f18827a2d2.png",
+    "static/media/avt6.png": "/static/media/avt6.c631978f36f8f5bfb8d2.png",
+    "static/media/styleLife.png": "/static/media/styleLife.7bfa00fb1d6e998b3b0c.png",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
-    "static/media/profile.png": "/static/media/profile.82e4d7274bcd8fdb1eef.png",
     "static/media/bgIMG.png": "/static/media/bgIMG.c39101e520e2997fc6d4.png",
     "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/avt2.png": "/static/media/avt2.110c41abed1cea5a436c.png",
     "static/media/prodozen.png": "/static/media/prodozen.3e22db70b77d88baab66.png",
-    "static/media/profile2.png": "/static/media/profile2.f52e9722f66c3435e524.png",
     "static/media/about03.jpg": "/static/media/about03.10415744af63cfffdcf2.jpg",
+    "static/media/profile.png": "/static/media/profile.6859f440f2761dd69486.png",
+    "static/media/profile2.png": "/static/media/profile2.6859f440f2761dd69486.png",
     "static/media/Krishan-Kumar-Resume.pdf": "/static/media/Krishan-Kumar-Resume.b10daf50ce5eb6dc1305.pdf",
     "static/media/logo.png": "/static/media/logo.c3155bc0c6a1c18236b6.png",
     "static/media/lestalk.png": "/static/media/lestalk.dea69071fc21a8fc35fe.png",
+    "static/media/pfp.png": "/static/media/pfp.72587f2f4537f5b4b688.png",
     "static/media/about02.jpg": "/static/media/about02.e2d2d48245ed44bdf2bc.jpg",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
+    "static/media/avt3.png": "/static/media/avt3.67a918e21d3987de4f02.png",
     "static/media/mongodb.png": "/static/media/mongodb.c5537dea5c62c3b7030d.png",
     "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/avt4.png": "/static/media/avt4.5fdac4f3291cfbd30ba3.png",
     "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
+    "static/media/avt5.png": "/static/media/avt5.d84455e95aef04ecdbbf.png",
     "static/media/express.png": "/static/media/express.70ef50a246c3bfa93f0b.png",
     "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
     "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
@@ -27,12 +36,12 @@
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/index.html",
-    "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
-    "main.ecae54d9.css.map": "/static/css/main.ecae54d9.css.map",
-    "main.d6196dac.js.map": "/static/js/main.d6196dac.js.map"
+    "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
+    "main.64ec27cf.css.map": "/static/css/main.64ec27cf.css.map",
+    "main.c5b2d18e.js.map": "/static/js/main.c5b2d18e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecae54d9.css",
-    "static/js/main.d6196dac.js"
+    "static/css/main.64ec27cf.css",
+    "static/js/main.c5b2d18e.js"
   ]
 }
