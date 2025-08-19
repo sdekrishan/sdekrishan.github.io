@@ -54,7 +54,7 @@ const Home = () => {
           className="app__header-info"
         >
           <div>
-            <h2 className="app__header_heading">Full Stack Web Developer</h2>
+            <h2 className="app__header_heading">Full Stack <br /> <span>Web Developer</span></h2>
             <p
               className={`app__header_description ${
                 showQA.experience || showQA.faqs ? 'hide_desc' : 'show_desc'

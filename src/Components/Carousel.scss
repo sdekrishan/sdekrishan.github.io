@@ -7,7 +7,7 @@
   overflow: hidden;
   gap: 1rem;
   margin-left: 0;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
   .mySwiper {
     height: 100%;
@@ -21,7 +21,7 @@
       width: 90vw;
       height: 30vh;
       margin-left: 0;
-      margin:0 ;
+      margin: 0;
     }
   }
 
@@ -46,8 +46,6 @@
     }
   }
 
-
-
   .swiperSlideContent {
     height: 90%;
     width: 55%;
@@ -62,7 +60,7 @@
       height: max-content;
       width: 90%;
       margin-right: 0;
-      margin:0;
+      margin: 0;
     }
   }
 
@@ -73,13 +71,22 @@
     color: var(--black-color);
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
+
+    &:hover {
+      img {
+        scale: 1.1;
+        transition: all 0.3s ease-in;
+      }
+    }
   }
 
   .swiperSlideContentTextInner {
-    position: sticky;
+    position: absolute;
     bottom: 0;
     left: 0;
     height: max-content;
+    min-height: max-content;
     width: 100%;
     padding: 1rem;
     background-color: var(--black-color);
@@ -92,7 +99,7 @@
     align-items: flex-start;
 
     @media screen and (max-width: 768px) {
-      padding: .5rem;
+      padding: 0.5rem;
       height: fit-content;
     }
   }
@@ -126,5 +133,24 @@
     height: 80vh;
     margin-top: 0;
     flex-direction: column-reverse;
+  }
+}
+
+.header-text {
+  background-color: var(--black-color);
+  color: white;
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  svg:first-child {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  svg:last-child {
+    margin-left: 10px;
+    cursor: pointer;
   }
 }
