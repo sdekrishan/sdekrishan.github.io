@@ -147,7 +147,7 @@ export default function VerticalCarousel() {
             direction: "horizontal", // 📱 mobile
             slidesPerView: 3,
           },
-          768: {
+          767: {
             direction: "vertical", // 💻 tablet & desktop
             slidesPerView: 3,
           },
@@ -180,7 +180,7 @@ export default function VerticalCarousel() {
                   backgroundPosition: "center",
                   opacity: 0.9,
                   zIndex: 1,
-                  overflow: "auto",
+                  overflow: "visible",
                 }}
                 src={activeSlide.imgUrl}
                 alt={activeSlide.name}

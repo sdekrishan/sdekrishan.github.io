@@ -15,7 +15,7 @@
     inset 0 2px 4px rgba(255, 255, 255, 0.6),
     inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: 10px;
     width: 100px;
   }
@@ -34,7 +34,8 @@
   z-index: 1; /* sits under coin */
   background: var(--primary);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1024px) {
     height: 10px;
   }
 }

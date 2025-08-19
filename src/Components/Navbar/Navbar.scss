@@ -1,5 +1,6 @@
 .app__navbar {
   width: 50%;
+  min-width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,9 +14,14 @@
   transform: translate(-50%, 10px);
   border-radius: 50px;
   z-index: 2;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 90%;
+    min-width: max-content;
+  }
+
+  @media screen and (max-width: 767px) {
     width: 90%;
     height: 60px;
     padding: 0.5rem;
@@ -27,11 +33,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 400;
   font-size: 2rem;
   color: var(--white-color);
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -84,7 +90,7 @@
     }
   }
 
-  @media screen and (max-width: 999px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -92,7 +98,7 @@
 .app__navbar_mob-links {
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 90vw;
     display: flex;
     justify-content: space-evenly;
@@ -107,5 +113,3 @@
     }
   }
 }
-
-

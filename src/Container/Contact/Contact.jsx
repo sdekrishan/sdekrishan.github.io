@@ -120,9 +120,9 @@ const Footer = () => {
           height="fit-content"
           w="100%"
           templateColumns="repeat(5, 1fr)"
-          gap={'60px'}
+          gap={'30px'}
           marginInline={{ base: 'auto' }}
-          display={{ base: 'none', lg: 'grid' }}
+          display={{ base: 'none', sm: 'none', md: 'none', lg: 'grid' }}
         >
           {contactMethods.map((method, index) => {
             if (method.id) {
@@ -165,7 +165,7 @@ const Footer = () => {
           gap={10}
           w="fit-content"
           marginInline={'auto'}
-          display={{ base: 'grid', lg: 'none' }}
+          display={{ base: 'grid', sm: 'grid', md: 'grid', lg: 'none', }}
         >
           {contactMethodsMob.map((method, index) => {
             if (method.id) {

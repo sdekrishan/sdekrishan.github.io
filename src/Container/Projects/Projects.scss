@@ -5,14 +5,14 @@
   height: 100%;
   margin-top: 10vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-top: 0;
   }
 }
 
 .heading {
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: block;
     color: white;
     font-size: 2.5rem;

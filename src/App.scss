@@ -31,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Manrope", sans-serif;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     p {
       font-size: 0.8rem;
     }
@@ -68,7 +68,7 @@ body {
     color: var(--white-color);
     color: var(--white-color);
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 2rem;
   }
 }
@@ -147,7 +147,7 @@ body {
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
       width: 70px;
       height: 70px;
@@ -219,7 +219,7 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 0.5rem;
   }
 }

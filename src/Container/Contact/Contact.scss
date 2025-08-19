@@ -1,5 +1,5 @@
 .app__footer {
-  width: 100%;
+  width: 90%;
   height: 90%;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@
     transition: all 0.5s ease-in;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: 40px;
     width: 40px;
   }
