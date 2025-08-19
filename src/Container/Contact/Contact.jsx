@@ -1,179 +1,209 @@
-import React, { useRef, useState } from "react";
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
-import emailjs from "@emailjs/browser";
-import { BsFillPhoneFill } from "react-icons/bs";
-import { SiGmail } from "react-icons/si";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { HiLocationMarker } from "react-icons/hi";
-import "./Contact.scss";
+import { motion } from 'framer-motion';
+import { Box, Flex, Grid, GridItem } from '@chakra-ui/react';
+import { SiGmail } from 'react-icons/si';
+import {
+  BsGithub,
+  BsLinkedin,
+  BsFillPhoneFill,
+  BsTwitter,
+} from 'react-icons/bs';
+import './Contact.scss';
+import { AppWrap } from '../../Wrapper';
+import Coin from '../../Components/Coin';
+
+const contactMethods = [
+  {
+    icon: <BsFillPhoneFill size="full" color="black" />,
+    text: '+91 1234567890',
+    link: 'tel:+911234567890',
+    id: 1,
+    name: 'Phone',
+  },
+  {},
+  {
+    icon: <SiGmail size="full" color="green" />,
+    text: '',
+    link: 'mailto:',
+    id: 2,
+    name: 'Gmail',
+  },
+  {},
+
+  {
+    icon: <BsGithub size="full" color="purple" />,
+    text: '',
+    link: '',
+    id: 3,
+    name: 'Github',
+  },
+  {},
+  {
+    icon: <BsLinkedin size="full" color="darkBlue" />,
+    text: '',
+    link: '',
+    id: 4,
+    name: 'LinkedIn',
+  },
+  {},
+
+  {
+    icon: <BsTwitter size="full" color="skyBlue" />,
+    text: 'Your Location',
+    link: '',
+    id: 5,
+    name: 'Twitter',
+  },
+  {},
+];
+
+const contactMethodsMob = [
+  {
+    icon: <BsFillPhoneFill size="full" color="black" />,
+    text: '+91 1234567890',
+    link: 'tel:+911234567890',
+    id: 1,
+    name: 'Phone',
+  },
+  {},
+  {},
+  {
+    icon: <SiGmail size="full" color="green" />,
+    text: '',
+    link: 'mailto:',
+    id: 2,
+    name: 'Gmail',
+  },
+  {
+    icon: <BsGithub size="full" color="purple" />,
+    text: '',
+    link: '',
+    id: 3,
+    name: 'Github',
+  },
+  {},
+  {},
+  {
+    icon: <BsLinkedin size="full" color="darkBlue" />,
+    text: '',
+    link: '',
+    id: 4,
+    name: 'LinkedIn',
+  },
+  {
+    icon: <BsTwitter size="full" color="skyBlue" />,
+    text: 'Your Location',
+    link: '',
+    id: 5,
+    name: 'Twitter',
+  },
+  {},
+];
+
 const Footer = () => {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const form = useRef();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .sendForm(
-        "service_7umul8l",
-        "template_5txgf5n",
-        form.current,
-        "riJqoRxifxRvYX6Wt"
-      )
-      .then(
-        (result) => {
-          setLoading(false);
-          setIsFormSubmitted(true);
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
-    <div className="app__footer" id='contacts'>
-      <h2 className="head-text">
-        Lets <span>Connect !</span>
-      </h2>
+    <motion.div
+      whileInView={{ x: [-200, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="app__footer"
+      id="contacts"
+    >
+      <h2 className='heading'>Let's Connect</h2>
       <Flex
         mt="2rem"
         pl="0"
         id="contact"
         pb="1rem"
-        className="app__footer-cards"
-        flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
+        flexDirection={{ base: 'column', sm: 'column', md: 'row', lg: 'row' }}
         w="90%"
-        boxShadow="5px 10px silver"
-        border="1px solid black"
-        borderRadius={"10px"}
       >
-        <Box
-          border={"1px solid green"}
-          _hover={{ boxShadow: "0 0 15px rgba(255, 255, 255, 0.8)" }}
-          transition=".5s ease"
-          padding={"1rem"}
-          w={{ base: "100%", sm: "100%", md: "100%", lg: "45%" }}
-          borderRadius={".5rem"}
+        <Grid
+          height="fit-content"
+          w="100%"
+          templateColumns="repeat(5, 1fr)"
+          gap={'60px'}
+          marginInline={{ base: 'auto' }}
+          display={{ base: 'none', lg: 'grid' }}
         >
-          <Text
-            fontStyle={"italic"}
-            fontSize="xl"
-            textDecoration="underline"
-            textAlign={"center"}
-          >
-            Contact Details
-          </Text>
-          <div className="app__footer-card">
-            <SiGmail color="blue" />
-            <Link
-              target={"_blank"}
-              ml="0.5rem"
-              href="mailto:sdekrishan@gmail.com"
-              className="work__tag-text"
-              id="contact-email"
-            >
-              sdekrishan@gmail.com
-            </Link>
-          </div>
-          <div className="app__footer-card">
-            <HiLocationMarker color="green" />
+          {contactMethods.map((method, index) => {
+            if (method.id) {
+              return (
+                <GridItem
+                  key={index + method.text}
+                  height={'200px'}
+                  width={'max-content'}
+                  display={`flex`}
+                  flexDirection={'column'}
+                  justifyContent={'center'}
+                  alignItems={'center'}
+                  gap={5}
+                >
+                  <motion.div
+                    whileInView={{
+                      scale: [0, 1],
+                      y: [50, 0],
+                      rotateY: [0, 360],
+                    }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="app__footer_icon"
+                  >
+                    {method.icon}
+                  </motion.div>
+                  <Box>
+                    <Coin />
+                  </Box>
+                </GridItem>
+              );
+            } else {
+              return <GridItem key={index} />;
+            }
+          })}
+        </Grid>
 
-            <Link
-              target={"_blank"}
-              href="https://goo.gl/maps/MqmZXBG7qWtSvNB86"
-              ml="0.5rem"
-              className="work__tag-text"
-            >
-              Bahadurgarh, Haryana
-            </Link>
-          </div>
-          <div className="app__footer-card">
-            <BsFillPhoneFill color="red" />
-
-            <Link
-              target={"_blank"}
-              href="tel:7988398651"
-              ml="0.5rem"
-              className="work__tag-text"
-              id="contact-phone"
-            >
-              7988398651
-            </Link>
-          </div>
-          <div className="app__footer-card">
-            <BsGithub color="black" />
-
-            <Link
-              target={"_blank"}
-              href="https://github.com/sdekrishan"
-              ml="0.5rem"
-              className="work__tag-text"
-              id='contact-github'
-            >
-              sdekrishan
-            </Link>
-          </div>
-          <div className="app__footer-card">
-            <BsLinkedin color="blue" />
-
-            <Link
-              target={"_blank"}
-              href="https://www.linkedin.com/in/sdekrishan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoBhtonT8QoelwDiylVoiWg%3D%3D"
-              ml="0.5rem"
-              className="work__tag-text"
-              id="contact-linkedin"
-            >
-              Krishan Kumar
-            </Link>
-          </div>
-        </Box>
-        <Box
-          w={{ base: "100%", sm: "100%", md: "100%", lg: "55%" }}
-          padding={"2rem"}
+        <Grid
+          templateColumns={'repeat(2, 1fr)'}
+          height="fit-content"
+          gap={10}
+          w="fit-content"
+          marginInline={'auto'}
+          display={{ base: 'grid', lg: 'none' }}
         >
-          {!isFormSubmitted ? (
-            <form ref={form} onSubmit={handleSubmit}>
-              <label>Name</label>
-              <input type="text" name="user_name" placeholder="Name" />
-              <label>Email</label>
-              <input type="email" name="user_email" placeholder="Email" />
-              <label>Message</label>
-              <textarea name="message" rows={"3"} placeholder="Message" />
-              <input
-                type="submit"
-                value={loading ? "Sending..." : "Send Message"}
-              />
-            </form>
-          ) : (
-            <div>
-              <Text fontSize={"2xl"} color="white" textAlign={"center"}>
-                Thank you for getting in touch!😍
-              </Text>
-            </div>
-          )}
-        </Box>
+          {contactMethodsMob.map((method, index) => {
+            if (method.id) {
+              return (
+                <GridItem
+                  key={index + method.text}
+                  height={{ base: '100px', lg: '200px' }}
+                  width={{ base: 'fit-content', lg: 'max-content' }}
+                  display={`flex`}
+                  flexDirection={'column'}
+                  justifyContent={'center'}
+                  alignItems={'center'}
+                  gap={{ base: 0, lg: 5 }}
+                >
+                  <motion.div
+                    whileInView={{
+                      scale: [0, 1],
+                      y: [50, 0],
+                      rotateY: [0, 360],
+                    }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="app__footer_icon"
+                  >
+                    {method.icon}
+                  </motion.div>
+                  <Box>
+                    <Coin />
+                  </Box>
+                </GridItem>
+              );
+            } else {
+              return <GridItem key={index} />;
+            }
+          })}
+        </Grid>
       </Flex>
-      <Text
-        mt="4rem"
-        fontSize={{ base: "lg", sm: "lg", md: "xl", lg: "2xl" }}
-        textAlign="center"
-        padding={'1rem'}
-        fontFamily={"kalam"}
-        w='full'
-      >
-        Made By Krishan with 😎
-      </Text>
-    </div>
+    </motion.div>
   );
 };
 
-// export default AppWrap(
-//   MotionWrap(Footer, "app__footer"),
-//   "contacts",
-//   "app__primarybg"
-// );
-export default Footer;
+export default AppWrap(Footer, 'app__footer', 'contacts');

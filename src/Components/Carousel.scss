@@ -1,0 +1,130 @@
+.vertical-carousel {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  gap: 1rem;
+  margin-left: 0;
+  margin-top: 2rem;
+
+  .mySwiper {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    @media screen and (max-width: 768px) {
+      width: 90vw;
+      height: 30vh;
+      margin-left: 0;
+      margin:0 ;
+    }
+  }
+
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    transform: scale(0.8); // default size for non-active slides
+    @media screen and (max-width: 768px) {
+      height: 30%;
+    }
+  }
+
+
+
+  .swiperSlideContent {
+    height: 90%;
+    width: 55%;
+    margin-right: 2rem;
+    position: relative;
+    border: 1px solid #ffffff14;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      height: max-content;
+      width: 100%;
+      margin-right: 0;
+      margin:0;
+    }
+  }
+
+  .swiperSlideContentText {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: var(--black-color);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .swiperSlideContentTextInner {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    height: max-content;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--black-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    column-gap: 0.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 768px) {
+      padding: .5rem;
+      height: fit-content;
+    }
+  }
+
+  .techStackContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .p-description {
+    font-size: 1rem;
+  }
+
+  .techStack {
+    border: 1px solid #ffffff14;
+    width: max-content;
+    background-color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  /* Active (center) slide styling */
+  .swiper-slide-active .slide {
+    transform: scale(1.2);
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 80vh;
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+}

@@ -1,98 +1,96 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { AppWrap, MotionWrap } from "../../Wrapper";
-import "./Skills.scss";
-import { images } from "../../constants";
+import { FaAws } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { AppWrap } from '../../Wrapper';
+import './Skills.scss';
+import { images } from '../../constants';
+
 const Skills = () => {
   const skills = [
     {
-      name: "Html 5",
+      name: 'Html 5',
       icon: images.html,
     },
     {
-      name: "CSS 3",
+      name: 'CSS 3',
       icon: images.css,
     },
     {
-      name: "JavaScript",
+      name: 'JavaScript',
       icon: images.javascript,
     },
     {
-      name: "TypeScript",
+      name: 'TypeScript',
       icon: images.typescript,
     },
     {
-      name: "React Js",
+      name: 'React Js',
       icon: images.react,
     },
     {
-      name: "Redux",
+      name: 'Redux',
       icon: images.redux,
     },
     {
-      name: "Node Js",
+      name: 'Node Js',
       icon: images.node,
     },
     {
-      name: "Express",
+      name: 'Express',
       icon: images.express,
     },
     {
-      name: "Sass",
+      name: 'Sass',
       icon: images.sass,
     },
     {
-      name: "Mongo DB",
+      name: 'Mongo DB',
       icon: images.mongodb,
     },
     {
-      name: "Github",
+      name: 'Github',
       icon: images.github,
     },
     {
-      name: "Chakra UI",
+      name: 'Chakra UI',
       icon: images.chakra,
     },
     {
-      name: "Next Js",
+      name: 'Next Js',
       icon: images.next,
     },
+    {
+      name: 'AWS',
+      icon: images.aws
+    }
   ];
 
   return (
-    <div id="skills">
-      <h2 className="head-text">
-        My <span>Skills</span>
-      </h2>
-
-      <div className="app__skills-container" >
+    <motion.div id="skills" className="app__skills">
+      <h2 className="heading">My Skills</h2>
+      <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
+              whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="app__skills-item app__flex"
               key={skill.name}
             >
-              <div className="app__flex">
+              <motion.div className="app__flex">
                 <motion.img
                   whileHover={{ scale: [1, 1.2] }}
                   src={skill.icon}
                   alt={skill.name}
                   className="skills-card-img"
                 />
-              </div>
+              </motion.div>
               <p className="p-text  skills-card-name">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default AppWrap(
-  MotionWrap(Skills, "app__skills"),
-  "skills",
-  "app__whitebg"
-);
+export default AppWrap(Skills, 'skills');

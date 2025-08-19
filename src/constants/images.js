@@ -28,8 +28,28 @@ import chakra from "../Assets/chakra.png"
 import prodozen from '../Assets/prodozen.png'
 import jcrew from '../Assets/jcrew.png'
 import lestalk from "../Assets/lestalk.png"
+import styleLife from "../Assets/styleLife.png"
+import stayFit from "../Assets/stayFit.png"
+import pfp from "../Assets/pfp.png"
+import avt from "../Assets/avt.png"
+import avt2 from "../Assets/avt2.png"
+import avt3 from "../Assets/avt3.png"
+import avt4 from "../Assets/avt4.png"
+import avt5 from "../Assets/avt5.png"
+import avt6 from "../Assets/avt6.png"
+import aws from "../Assets/aws.png"
 export default {
   lestalk,
+  aws,
+  avt,
+  avt2,
+  avt3,
+  avt4,
+  avt5,
+  avt6,
+  pfp,
+  styleLife,
+  stayFit,
   about01,
   next,
   express,

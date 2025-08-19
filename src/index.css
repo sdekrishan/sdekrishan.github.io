@@ -1,20 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Orbitron:wght@400;500;600;700;800;900&family=Prosto+One&family=Rubik+80s+Fade&family=Sofia&display=swap");
-
 :root {
-  --font-base: "DM Sans", sans-serif;
-
-  --primary-color: #edf2f8;
-  --secondary-color: #d8323c;
+  --font-base: 'Manrope', sans-serif;
   --black-color: #000000;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --primary: #1e1e1e;
+  --secondary: #007aff;
+  --bg-dark: #1e1e1e;
+  --glass-bg: #007aff;
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --highlight: #c0a062;
+  --text-light: #ffffff;
 }
-html{
+html {
   scroll-behavior: smooth;
+  background-color: var(--black-color);
 }
 
 * {

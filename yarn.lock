@@ -1277,6 +1277,11 @@
   dependencies:
     "@chakra-ui/shared-utils" "2.0.4"
 
+"@chakra-ui/icons@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.npmjs.org/@chakra-ui/icons/-/icons-2.2.4.tgz"
+  integrity sha512-l5QdBgwrAg3Sc2BRqtNkJpfuLw/pWRDwwT58J6c4PqQT6wzXxyNa8Q0PForu1ltB5qEiFb1kxr/F/HO1EwNa6g==
+
 "@chakra-ui/image@2.0.13":
   version "2.0.13"
   resolved "https://registry.npmjs.org/@chakra-ui/image/-/image-2.0.13.tgz"
@@ -1608,7 +1613,7 @@
   dependencies:
     "@chakra-ui/utils" "2.0.14"
 
-"@chakra-ui/react@^2.4.6":
+"@chakra-ui/react@^2.4.6", "@chakra-ui/react@>=2.0.0":
   version "2.4.6"
   resolved "https://registry.npmjs.org/@chakra-ui/react/-/react-2.4.6.tgz"
   integrity sha512-uz9QjjxJgf81fXcOWDiVo2rU/lWfThCDKW5UMlYX2OrrHko7OnwZ3r9oMlZFU/vAS71LWhKbjXicJmOwwls42g==
@@ -9733,6 +9738,11 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+swiper@^11.2.10:
+  version "11.2.10"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-11.2.10.tgz"
+  integrity sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
