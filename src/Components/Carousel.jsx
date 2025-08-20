@@ -127,8 +127,8 @@ export default function VerticalCarousel() {
   const [activeSlide, setActiveSlide] = useState(slides[0]);
 
   const handleClick = (link) => {
-    window.open(link)
-  }
+    window.open(link);
+  };
   return (
     <div className="vertical-carousel">
       <Swiper
@@ -166,12 +166,7 @@ export default function VerticalCarousel() {
       <div className="swiperSlideContent">
         <AnimatePresence>
           {activeSlide && (
-            <motion.div
-              key={activeSlide.id}
-              whileInView={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className="swiperSlideContentText"
-            >
+            <div key={activeSlide.id} className="swiperSlideContentText">
               <img
                 style={{
                   backgroundImage: `url(${activeSlide.imgUrl})`,
@@ -191,9 +186,15 @@ export default function VerticalCarousel() {
                   transition={{ duration: 0.5 }}
                   className="header-text"
                 >
-                  <BsGithub size={"20px"} onClick={() => handleClick(activeSlide.codeLink)}/>
+                  <BsGithub
+                    size={"20px"}
+                    onClick={() => handleClick(activeSlide.codeLink)}
+                  />
                   {activeSlide.title}
-                  <BsLink size={"20px"} onClick={() => handleClick(activeSlide.projectLink)}/>
+                  <BsLink
+                    size={"20px"}
+                    onClick={() => handleClick(activeSlide.projectLink)}
+                  />
                 </div>
                 <p
                   whileInView={{ x: [-100, 0], fade: [0, 1] }}
@@ -216,7 +217,7 @@ export default function VerticalCarousel() {
                     ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
         </AnimatePresence>
       </div>
