@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--black-color);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -63,7 +63,7 @@
   letter-spacing: 0.1rem;
   font-weight: 500;
   margin-block: 1rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 
   @media screen and (max-width: 767px) {
     height: fit-content;
@@ -78,7 +78,7 @@
   font-size: 1rem;
   color: var(--white-color);
   letter-spacing: 0.1rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -139,7 +139,7 @@
   }
 
   span {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     font-size: 2rem;
     color: var(--glass-bg);
   }
@@ -185,9 +185,13 @@
 }
 
 .hide_desc {
-  display: none;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .show_desc {
-  display: block;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
 }

@@ -164,7 +164,6 @@ export default function VerticalCarousel() {
       </Swiper>
 
       <div className="swiperSlideContent">
-        <AnimatePresence>
           {activeSlide && (
             <div key={activeSlide.id} className="swiperSlideContentText">
               <img
@@ -219,7 +218,6 @@ export default function VerticalCarousel() {
               </div>
             </div>
           )}
-        </AnimatePresence>
       </div>
     </div>
   );
