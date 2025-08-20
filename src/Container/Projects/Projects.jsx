@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import { AppWrap } from '../../Wrapper';
-import './Projects.scss';
-import VerticalCarousel from '../../Components/Carousel';
+import { motion } from "framer-motion";
+import { AppWrap } from "../../Wrapper";
+import "./Projects.scss";
+import VerticalCarousel from "../../Components/Carousel";
 
 const Projects = () => {
   return (
@@ -27,4 +27,4 @@ const Projects = () => {
   );
 };
 
-export default AppWrap(Projects, 'projects');
+export default AppWrap(Projects, "projects");
