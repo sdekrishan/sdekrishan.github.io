@@ -6,6 +6,7 @@ import {
   BsLinkedin,
   BsFillPhoneFill,
   BsTwitter,
+  BsTwitterX
 } from 'react-icons/bs';
 import './Contact.scss';
 import { AppWrap } from '../../Wrapper';
@@ -14,42 +15,42 @@ import Coin from '../../Components/Coin';
 const contactMethods = [
   {
     icon: <BsFillPhoneFill size="full" color="black" />,
-    text: '+91 1234567890',
-    link: 'tel:+911234567890',
+    text: '+91 7988398651',
+    link: 'tel:+917988398651',
     id: 1,
     name: 'Phone',
   },
   {},
   {
     icon: <SiGmail size="full" color="green" />,
-    text: '',
-    link: 'mailto:',
+    text: 'sdekrishan@gmail.com',
+    link: 'mailto:sdekrishan@gmail.com',
     id: 2,
-    name: 'Gmail',
+    name: 'sdekrishan@gmail.com',
   },
   {},
 
   {
     icon: <BsGithub size="full" color="purple" />,
-    text: '',
-    link: '',
+    text: 'SdeKrishan',
+    link: 'https://github.com/sdekrishan',
     id: 3,
     name: 'Github',
   },
   {},
   {
     icon: <BsLinkedin size="full" color="darkBlue" />,
-    text: '',
-    link: '',
+    text: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/sdekrishan/',
     id: 4,
     name: 'LinkedIn',
   },
   {},
 
   {
-    icon: <BsTwitter size="full" color="skyBlue" />,
+    icon: <BsTwitterX size="full" color="black" />,
     text: 'Your Location',
-    link: '',
+    link: 'https://x.com/sdekrishan',
     id: 5,
     name: 'Twitter',
   },
@@ -90,7 +91,7 @@ const contactMethodsMob = [
     name: 'LinkedIn',
   },
   {
-    icon: <BsTwitter size="full" color="skyBlue" />,
+    icon: <BsTwitterX size="full" color="black" />,
     text: 'Your Location',
     link: '',
     id: 5,
@@ -136,6 +137,7 @@ const Footer = () => {
                   justifyContent={'center'}
                   alignItems={'center'}
                   gap={5}
+                  onClick={()=> {window.open(method.link)}}
                 >
                   <motion.div
                     whileInView={{

@@ -8759,10 +8759,10 @@ react-github-calendar@^3.3.4:
   dependencies:
     react-activity-calendar "^1.7.0"
 
-react-icons@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.6.0.tgz"
-  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
+react-icons@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz"
+  integrity sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==
 
 react-is@^16.13.1:
   version "16.13.1"
